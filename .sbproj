@@ -1,0 +1,57 @@
+{
+  "Title": "The Stanley Parable: Source 2",
+  "Type": "game",
+  "Org": "softsplit",
+  "Ident": "thestanleyparable",
+  "Tags": null,
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "Resources": null,
+  "MenuResources": "\nui/mainmenu/*\nfonts/*\nui/*",
+  "HasCode": true,
+  "CodePath": "/code/",
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Metadata": {
+    "MaxPlayers": 1,
+    "MinPlayers": 1,
+    "GameNetworkType": "Singleplayer",
+    "MapSelect": "Unrestricted",
+    "MapList": [
+      "facepunch.square"
+    ],
+    "RankType": "None",
+    "PerMapRanking": false,
+    "LeaderboardType": "None",
+    "GameCategory": "TechDemos",
+    "ProjectTemplate": null,
+    "CsProjName": "",
+    "HttpAllowList": null,
+    "SavedGames": false,
+    "MapDependentSaves": false,
+    "SaveFormatVersion": 1001,
+    "TickRate": 50,
+    "LaunchConfigs": [
+      {
+        "Name": "Test",
+        "GameIdent": "softsplit.thestanleyparable#local",
+        "MapName": "facepunch.construct",
+        "MaxPlayers": 1,
+        "GameSettings": {},
+        "Addons": "",
+        "PreLaunchCommand": "",
+        "PostLaunchCommand": ""
+      }
+    ],
+    "Compiler": {
+      "RootNamespace": "TheStanleyParable",
+      "DefineConstants": "THESTANLEYPARABLE;ADDON;RELEASE",
+      "NoWarn": "1701;1702;1591;",
+      "ReleaseMode": "Release",
+      "References": [],
+      "DistinctReferences": []
+    },
+    "ParentPackage": ""
+  }
+}

@@ -1,0 +1,40 @@
+@using Sandbox;
+@using System.Linq;
+@using System.Threading.Tasks;
+@using Sandbox.Menu;
+@using Sandbox.UI;
+
+<root>
+    <div class="wrapper">
+        <div class=game-title>
+            <div class="game-title1">
+                You are playing
+            </div>
+            <div class="game-title2">
+                THE STANLEY PARABLE
+            </div>
+        </div>
+        <div class="controls">
+            @if (Game.InGame)
+            {
+                <a class="button" onclick=@LeaveGame>Leave</a>
+            }
+            else
+            {
+                <a class="button" href="">Begin the game</a>
+                <a class="button" href="">Options</a>
+                <a class="button" href="">Credits</a>
+            }
+
+            <a class="button" @onclick=@Game.Menu.Close>Quit</a>
+        </div>
+    </div>
+</root>
+
+@code
+{
+    void LeaveGame()
+    {
+        Game.Menu.LeaveServer("Leaving");
+    }
+}
