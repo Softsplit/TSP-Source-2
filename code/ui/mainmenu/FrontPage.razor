@@ -1,4 +1,5 @@
 @using Sandbox;
+@using System;
 @using System.Linq;
 @using System.Threading.Tasks;
 @using Sandbox.Menu;
@@ -6,35 +7,57 @@
 
 <root>
     <div class="wrapper">
-        <div class=game-title>
-            <div class="game-title1">
-                You are playing
-            </div>
-            <div class="game-title2">
-                THE STANLEY PARABLE
-            </div>
-        </div>
+
         <div class="controls">
             @if (Game.InGame)
             {
-                <a class="button" onclick=@LeaveGame>Leave</a>
+                <div class=game-title>
+                    <div class="game-title2">
+                        The game is now paused
+                    </div>
+                </div>
+                <a class="button" @onclick=@HideMenu>Resume the game</a>
+                <a class="button" href="">Begin the game again</a>
+                <a class="button" href="">Options</a>
+                <a class="button" onclick=@LeaveGame>Quit to menu</a>
             }
             else
             {
-                <a class="button" href="">Begin the game</a>
+                <div class=game-title>
+                    <div class="game-title1">
+                        You are playing
+                    </div>
+                    <div class="game-title2">
+                        THE STANLEY PARABLE
+                    </div>
+                </div>
+                <a class="button" @onclick=@BeginTheGame>Begin the game</a>
                 <a class="button" href="">Options</a>
                 <a class="button" href="">Credits</a>
+                <a class="button" @onclick=@Close>Quit</a>
             }
-
-            <a class="button" @onclick=@Game.Menu.Close>Quit</a>
         </div>
     </div>
 </root>
 
 @code
 {
+
     void LeaveGame()
     {
         Game.Menu.LeaveServer("Leaving");
+    }
+
+    void HideMenu()
+    {
+        Game.Menu.HideMenu();
+    }
+
+    void Close() {
+        Game.Menu.Close();
+    }
+
+    async Task BeginTheGame() {
+        await Game.Menu.StartServerAsync( 1, "The Stanley Parable", "facepunch.construct" );
     }
 }
