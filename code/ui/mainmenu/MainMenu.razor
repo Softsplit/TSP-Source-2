@@ -18,6 +18,7 @@
         DefaultUrl = "/";
 
         AddDestination( "/", typeof( FrontPage ) );
+        AddDestination( "/options", typeof( OptionsPage ) );
 
         BindClass( "ingame", () => Game.InGame );
     }

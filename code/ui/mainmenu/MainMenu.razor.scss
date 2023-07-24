@@ -1,6 +1,4 @@
-
-MainMenu
-{
+MainMenu {
     background-color: #262934;
     opacity: 1;
     flex-direction: column;
@@ -9,51 +7,42 @@ MainMenu
     height: 100%;
     position: absolute;
     transition: all 0.3s ease-out;
-    color: rgba( white, 0.8 );
+    color: white;
 
-    .background
-    {
+    .background {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-image: url( https://files.facepunch.com/tony/1b1311b1/boxes.webm );
-        opacity: 0.2;
+        background-image: url(https://github-production-user-asset-6210df.s3.amazonaws.com/86578963/255554469-aa54cab0-327a-4251-be9b-9c7610506c13.png );
         background-size: cover;
-        filter: blur( 20px );
-        mask: linear-gradient( 45deg, white, white, black );
         mask-scope: filter;
         background-repeat: no-repeat;
     }
 
-    &:intro
-    {
+    &:intro {
         opacity: 0;
-        transform: scaleX( 1.1 );
+        transform: scaleX(1.1);
     }
 
-    &.ingame
-    {
+    &.ingame {
         background-color: #262934ee;
         backdrop-filter: blur(10px);
 
-        .background
-        {
+        .background {
             opacity: 0;
         }
     }
 
-    .scroll
-    {
+    .scroll {
         flex-direction: column;
         max-height: 386px;
         overflow: scroll;
         gap: 50px;
     }
 
-    .spacer
-    {
+    .spacer {
         height: 1px;
-        background-image: linear-gradient( to right, rgba( white, 0.4 ), rgba( white, 0 ) );
+        background-image: linear-gradient(to right, rgba(white, 0.4), rgba(white, 0));
         width: 512px;
         margin: 16px 0px;
     }
@@ -74,68 +63,99 @@ MainMenu
         height: 425px;
     }
 
-    .game-title1
-    {
+    OptionsPage .game-title {
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        padding-bottom: 700px;
+        height: 425px;
+    }
+
+    .game-title1 {
         font-family: LeagueGothic;
         font-weight: 700;
         font-size: 73px;
-        color: rgba( white, 1 );
+        color: rgba(white, 1);
     }
 
-    .game-title2
-    {
+    .game-title2 {
         font-family: LeagueGothic;
         font-weight: 700;
         font-size: 140px;
-        color: rgba( white, 1 ); 
+        color: rgba(white, 1);
     }
 
-    .col
-    {
+    .col {
         flex-direction: column;
     }
 
-    .controls
-    {
+    .controls {
         flex-direction: column;
         gap: 0px;
         align-items: flex-start;
 
-        a, .button
-        {
+        a,
+        .button {
             font-family: LeagueGothic;
             font-size: 93px;
 
-            &:hover
-            {
-                color: rgba( white, 1 );
+            &:hover {
+                color: #7e7e7e;
                 font-weight: 900;
-                sound-in: ui.button.over;
+                sound-in: sounds/gameui/ui_menu_hover_01.sound;
                 cursor: pointer;
             }
 
-            &:active
-            {
-                sound-in: ui.button.press;
+            &:active {
+                sound-in: sounds/gameui/ui_menu_click_01.sound;
             }
         }
 
-        .span
-        {
+        .span {
             gap: 0px;
         }
     }
 
-    .navigator-canvas
-    {
+    OptionsPage .controls {
+        flex-direction: column;
+        gap: 50px;
+        align-items: left;
+
+        a,
+        .button {
+            font-family: LeagueGothic;
+            font-size: 93px;
+
+            &:hover {
+                color: #7e7e7e;
+                font-weight: 900;
+                sound-in: sounds/gameui/ui_menu_hover_01.sound;
+                cursor: pointer;
+            }
+
+            &:active {
+                sound-in: sounds/gameui/ui_menu_click_01.sound;
+            }
+        }
+
+        .span {
+            gap: 0px;
+        }
+    }
+
+    .options {
+        gap: 35px;
+        flex-direction: row;
+    }
+
+    .navigator-canvas {
         flex-direction: column;
         height: 100%;
         flex-grow: 1;
         flex-shrink: 0;
     }
 
-    .navigator-body
-    {
+    .navigator-body {
         position: absolute;
         left: 0;
         right: 0;
@@ -145,72 +165,60 @@ MainMenu
         justify-content: center;
         transition: opacity 0.15s ease-out;
 
-        &.hidden
-        {
+        &.hidden {
             opacity: 0;
         }
     }
 }
 
-FormGroup
-{
+FormGroup {
     flex-direction: column;
     min-width: 300px;
-    gap:16px;
+    gap: 16px;
 }
 
-SlimPackageCard
-{
+SlimPackageCard {
     flex-direction: row;
     gap: 12px;
     align-items: center;
 
-    > i
-    {
-        &:hover
-        {
+    >i {
+        &:hover {
             cursor: pointer;
             color: white;
-            transform: scale( 1.1 );
-            sound-in: ui.button.over;
+            transform: scale(1.1);
+            sound-in: sounds/gameui/ui_menu_hover_01.sound;
         }
 
-        &:active
-        {
-            sound-in: ui.button.press;
+        &:active {
+            sound-in: sounds/gameui/ui_menu_click_01.sound;
         }
     }
 }
 
-i
-{
+i {
     font-family: Material Icons;
     text-transform: lowercase;
 
-    &.with-click
-    {
-        &:hover
-        {
+    &.with-click {
+        &:hover {
             cursor: pointer;
             color: white;
-            transform: scale( 1.1 );
-            sound-in: ui.button.over;
+            transform: scale(1.1);
+            sound-in: sounds/gameui/ui_menu_hover_01.sound;
         }
 
-        &:active
-        {
-            sound-in: ui.button.press;
+        &:active {
+            sound-in: sounds/gameui/ui_menu_click_01.sound;
         }
     }
 }
 
-.avatar
-{
+.avatar {
     width: 64px;
     height: 64px;
 
-    &:hover
-    {
+    &:hover {
         border: 1px solid white;
     }
 }

@@ -2,7 +2,6 @@
 LoadingScreen
 {
     background-color: #262934;
-    padding-bottom: 50px;
     opacity: 1;
     flex-direction: column;
     font-size: 25px;
@@ -31,13 +30,15 @@ LoadingScreen
     .controls
     {
         font-size: 93px;
-        flex-direction: column;
-        gap: 0px;
+        flex-direction: row;
+        gap: 10px;
         align-items: flex-start;
         font-family: LeagueGothic;
-        width: 100%;
+        width: 3900px;
+        height: fit-content;
         color: #373737;
-        overflow: visible;
+        margin-left: -800px;
+        margin-bottom: 50px;
 
         .loading {
             color: white;

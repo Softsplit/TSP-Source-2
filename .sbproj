@@ -8,7 +8,7 @@
   "HasAssets": true,
   "AssetsPath": "",
   "Resources": null,
-  "MenuResources": "\nui/mainmenu/*\nfonts/*\nui/*",
+  "MenuResources": "fonts/*\nui/*\nsounds/ui/*\nsounds/gameui/*\nsounds/raphael*\nsounds/fx/becret.wav\nsounds/fx/bark*",
   "HasCode": true,
   "CodePath": "/code/",
   "PackageReferences": [],

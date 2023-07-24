@@ -5,9 +5,6 @@ namespace TheStanleyParable;
 
 public partial class Pawn : AnimatedEntity
 {
-	[Net, Predicted]
-	public Weapon ActiveWeapon { get; set; }
-
 	[ClientInput]
 	public Vector3 InputDirection { get; set; }
 	
@@ -72,19 +69,10 @@ public partial class Pawn : AnimatedEntity
 		EnableShadowInFirstPerson = true;
 	}
 
-	public void SetActiveWeapon( Weapon weapon )
-	{
-		ActiveWeapon?.OnHolster();
-		ActiveWeapon = weapon;
-		ActiveWeapon.OnEquip( this );
-	}
-
 	public void Respawn()
 	{
 		Components.Create<PawnController>();
 		Components.Create<PawnAnimator>();
-
-		SetActiveWeapon( new Pistol() );
 	}
 
 	public void DressFromClient( IClient cl )
@@ -99,7 +87,6 @@ public partial class Pawn : AnimatedEntity
 		SimulateRotation();
 		Controller?.Simulate( cl );
 		Animator?.Simulate();
-		ActiveWeapon?.Simulate( cl );
 		EyeLocalPosition = Vector3.Up * (64f * Scale);
 	}
 
