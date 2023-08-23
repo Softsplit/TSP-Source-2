@@ -7,8 +7,8 @@
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
-  "Resources": null,
-  "MenuResources": "fonts/*\nui/*\nsounds/ui/*\nsounds/gameui/*\nsounds/raphael*\nsounds/fx/becret.wav\nsounds/fx/bark*",
+  "Resources": "",
+  "MenuResources": "fonts/*\nui/*\nMenu/*\nsounds/ui/*\nsounds/gameui/*\nsounds/raphael*\nsounds/fx/becret.wav\nsounds/fx/bark*",
   "HasCode": true,
   "CodePath": "/code/",
   "PackageReferences": [],
@@ -34,9 +34,9 @@
     "TickRate": 50,
     "LaunchConfigs": [
       {
-        "Name": "Test",
+        "Name": "The Stanley Parable",
         "GameIdent": "softsplit.thestanleyparable#local",
-        "MapName": "facepunch.construct",
+        "MapName": "softsplit.seriousroom",
         "MaxPlayers": 1,
         "GameSettings": {},
         "Addons": "",
@@ -46,12 +46,73 @@
     ],
     "Compiler": {
       "RootNamespace": "TheStanleyParable",
-      "DefineConstants": "THESTANLEYPARABLE;ADDON;RELEASE",
+      "DefineConstants": "THESTANLEYPARABLE;ADDON;DEBUG",
       "NoWarn": "1701;1702;1591;",
-      "ReleaseMode": "Release",
       "References": [],
       "DistinctReferences": []
     },
-    "ParentPackage": ""
+    "ParentPackage": "",
+    "ControlModes": {
+      "Keyboard": true,
+      "Gamepad": true
+    },
+    "InputSettings": {
+      "Actions": [
+        {
+          "Name": "Forward",
+          "KeyboardCode": "W",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Backward",
+          "KeyboardCode": "S",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Left",
+          "KeyboardCode": "A",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Right",
+          "KeyboardCode": "D",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Walk",
+          "KeyboardCode": "alt",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "use",
+          "KeyboardCode": "e",
+          "GamepadCode": "Y",
+          "GroupName": "Actions"
+        },
+        {
+          "Name": "Voice",
+          "KeyboardCode": "v",
+          "GamepadCode": "RightJoystickButton",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Chat",
+          "KeyboardCode": "enter",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "attack1",
+          "KeyboardCode": "MOUSE1",
+          "GamepadCode": "RightTrigger",
+          "GroupName": "Actions"
+        },
+        {
+          "Name": "Duck",
+          "KeyboardCode": "CTRL",
+          "GamepadCode": "B",
+          "GroupName": "Movement"
+        }
+      ]
+    }
   }
 }
