@@ -6,7 +6,7 @@ using Editor;
 /// </summary>
 [Library("linked_portal_door"), HammerEntity]
 [EditorModel("models/editor/axis_helper_thick.vmdl")]
-[Title("Linked Portal Door"), Category("Portal"), Icon("door_front")]
+[Title("Linked Portal Door"), Category("Miscellaneous"), Icon("door_front")]
 public partial class LinkedPortalDoor : Entity
 {
     /// <summary>
