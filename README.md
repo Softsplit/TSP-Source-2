@@ -36,6 +36,6 @@ Join our [Discord](https://discord.gg/GaGFHFttAC) to chat with other developers 
 
 # License & Disclaimer
 
-This repository is covered by the [MIT license](https://github.com/Softsplit/TSP-Source-2/blob/main/LICENSE.MD). It is crucial to acknowledge that certain assets integrated into this project, including models, sounds, animations, shaders, and more, were initially crafted by Valve Corporation, Galactic Studios, and Crows Crows Crows, and thus are subject to the respective intellectual property rights of each company.
+This repository is covered by the [MIT license](https://github.com/Softsplit/TSP-Source-2/blob/main/LICENSE.md). It is crucial to acknowledge that certain assets integrated into this project, including models, sounds, animations, shaders, and more, were initially crafted by Valve Corporation, Galactic Studios, and Crows Crows Crows, and thus are subject to the respective intellectual property rights of each company.
 
-For more information on third-party licenses, please refer to the [Third Party Licenses](https://github.com/Softsplit/TSP-Source-2/blob/main/THIRDPARTYLICENSES.MD).
+For more information on third-party licenses, please refer to the [Third Party Licenses](https://github.com/Softsplit/TSP-Source-2/blob/main/THIRDPARTYLICENSES.md).
