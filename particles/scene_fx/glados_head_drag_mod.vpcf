@@ -1,0 +1,118 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/wake/ring_wake_mod.vmat"
+			m_nOrientationType = 2
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMax = 0.7
+			m_flFadeOutTimeMin = 0.6
+		},
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 4.0
+			m_flBias = 0.825
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+		},
+		{
+			_class = "C_OP_RampScalarSpline"
+			m_nField = 4
+			m_RateMin = -0.5
+			m_RateMax = 0.5
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 3.0
+			m_fLifetimeMin = 2.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 40
+			m_nAlphaMax = 50
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 48.0
+			m_flRadiusMin = 32.0
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMin = 2.0
+			m_fRadiusMax = 2.0
+			m_vecDistanceBiasAbs = [0.0, 0.0, 1.0]
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		{
+			_class = "C_INIT_PositionPlaceOnGround"
+			m_bIncludeWater = true
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 1
+		},
+		{
+			_class = "C_INIT_RemapCPtoScalar"
+			m_nFieldOutput = 16
+			m_flInputMax = 0.7
+			m_nCPInput = 1
+		},
+		{
+			_class = "C_INIT_DistanceToCPInit"
+			m_nSetMethod = "PARTICLE_SET_SCALE_CURRENT_VALUE"
+			m_flOutputMax = 0.0
+			m_flOutputMin = 1.0
+			m_nFieldOutput = 7
+			m_flInputMax = 28.0
+			m_flInputMin = 24.0
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_nScaleControlPoint = 1
+			m_flEmitRate = 6.0
+		},
+	]
+
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/scene_fx/glados_head_drag_droplets.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/scene_fx/glados_head_drag_ripple_mod.vpcf"
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 128
+}

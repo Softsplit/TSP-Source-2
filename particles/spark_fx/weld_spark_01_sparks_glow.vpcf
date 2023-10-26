@@ -1,0 +1,86 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/star.vmat"
+			VisibilityInputs = 
+			{
+				m_flProxyRadius = 8.0
+				m_nCPin = 0
+			}
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.1
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_bEaseInAndOut = true
+			m_flEndScale = 0.5
+			m_flStartScale = 1.5
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flStartFadeOutTime = 0.25
+			m_flEndFadeInTime = 1.0
+		},
+		{
+			_class = "C_OP_PositionLock"
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 0.1
+			m_fLifetimeMin = 0.1
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 12.0
+			m_flRadiusMin = 4.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMax = 100
+			m_nAlphaMin = 90
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMin = [4.0, 0.0, 0.0]
+			m_LocalCoordinateSystemSpeedMax = [40.0, 0.0, 0.0]
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_bLocalCoords = true
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomColor"
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmissionDuration = 0.1
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 50
+	m_nInitialParticles = 2
+	m_flCullRadius = 8.0
+}

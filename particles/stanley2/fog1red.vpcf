@@ -1,0 +1,90 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/particle_glow_04_additive.vmat"
+			m_flAnimationRate = 2.0
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_FadeAndKill"
+		},
+		{
+			_class = "C_OP_FadeIn"
+		},
+		{
+			_class = "C_OP_Spin"
+			m_nSpinRateMinDegrees = 5
+			m_nSpinRateDegrees = 10
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, 20.0]
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = [255, 85, 149, 255]
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMax = [242, 38, 91, 255]
+			m_ColorMin = [215, 94, 52, 255]
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMax = 180
+			m_nAlphaMin = 100
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 400.0
+			m_flRadiusMin = 250.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 25.0
+			m_fLifetimeMin = 20.0
+		},
+		{
+			_class = "C_INIT_RingWave"
+			m_flThickness = 200.0
+			m_flInitialRadius = 3000.0
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 11.0
+		},
+	]
+
+	m_ForceGenerators = 
+	[
+		{
+			_class = "C_OP_TwistAroundAxis"
+			m_fForceAmount = -12.0
+		},
+		{
+			_class = "C_OP_AttractToControlPoint"
+			m_fFalloffPower = 0.0
+			m_fForceAmount = 50.0
+			m_nOpStrengthScaleSeed = 1
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 250
+}

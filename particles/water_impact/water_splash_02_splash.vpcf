@@ -1,0 +1,98 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/antlion_goop3/antlion_goop3.vmat"
+			m_hTexture = resource:"materials/particle/antlion_goop3/antlion_goop3.vtex"
+			m_bPerVertexLighting = 1
+			m_flMaxSize = 0.35
+			m_flAnimationRate = 2.0
+			m_nAnimationType = "ANIMATION_TYPE_FIT_LIFETIME"
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.5
+			m_flFadeOutTimeMax = 1.0
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, -600.0]
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 1.5
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomColor"
+			m_flLightAmplification = 2.0
+			m_nTintBlendMode = 4
+			m_ColorMax = [229, 225, 196, 255]
+			m_ColorMin = [133, 135, 114, 255]
+			m_flTintPerc = 0.5
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.45
+			m_fLifetimeMax = 0.55
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 130
+			m_nAlphaMax = 180
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 12.0
+			m_flRadiusMax = 26.0
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMin = 1.0
+			m_fRadiusMax = 4.0
+			m_vecDistanceBias = [1.0, 1.0, 0.0]
+			m_vecDistanceBiasAbs = [0.0, 0.0, 1.0]
+			m_fSpeedMin = 10.0
+			m_fSpeedMax = 30.0
+			m_LocalCoordinateSystemSpeedMin = [0.0, 0.0, 160.0]
+			m_LocalCoordinateSystemSpeedMax = [0.0, 0.0, 240.0]
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_vecOutputMin = [-30.0, -30.0, -30.0]
+			m_vecOutputMax = [30.0, 30.0, 30.0]
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 3
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmissionDuration = 0.1
+			m_flEmitRate = 80.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+}

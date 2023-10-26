@@ -1,0 +1,86 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/impact/fleks.vmat"
+			m_hTexture = resource:"materials/particle/impact/fleks.vtex"
+			m_bPerVertexLighting = 1
+			m_flOverbrightFactor = 1.7
+			m_bBlendFramesSeq0 = 0
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.005
+			m_Gravity = [0.0, 0.0, -375.0]
+		},
+		{
+			_class = "C_OP_Spin"
+			m_nSpinRateDegrees = 45
+		},
+		{
+			_class = "C_OP_FadeOut"
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMax = [1000.0, 0.0, 0.0]
+			m_fSpeedMax = 350.0
+			m_fSpeedMin = 350.0
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 4.0
+			m_flRadiusMin = 0.75
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 2.0
+			m_fLifetimeMin = 1.0
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMax = [85.0, 0.0, 85.0]
+			m_OffsetMin = [-85.0, 0.0, -85.0]
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_flTintPerc = 1.0
+			m_TintMax = [50, 49, 45, 255]
+			m_TintMin = [50, 49, 45, 255]
+			m_ColorMax = [50, 49, 45, 255]
+			m_ColorMin = [50, 49, 45, 255]
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 4
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nMaxEmittedPerFrame = 64
+			m_nParticlesToEmit = 64
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+}

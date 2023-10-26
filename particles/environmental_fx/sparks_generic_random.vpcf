@@ -1,0 +1,109 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_hMaterial = resource:"materials/particle/particle_spark.vmat"
+			m_hTexture = resource:"materials/effects/spark.vtex"
+			m_bAdditive = 1
+			m_flMaxLength = 256.0
+			m_flLengthFadeInTime = 0.1
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flStartFadeOutTime = 0.0
+			m_flEndFadeInTime = 0.0
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, -400.0]
+			m_fDrag = 0.35
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 2.0
+			m_fSpeedMin = 150.0
+			m_fSpeedMax = 300.0
+			m_LocalCoordinateSystemSpeedMin = [100.0, 0.0, 125.0]
+			m_LocalCoordinateSystemSpeedMax = [100.0, 0.0, 150.0]
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.025
+			m_fLifetimeMax = 0.3
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 0.5
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [195, 242, 255, 255]
+			m_ColorMax = [255, 234, 189, 255]
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 200
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_vecOutputMin = [400.0, 400.0, 100.0]
+			m_vecOutputMax = [100.0, -400.0, 50.0]
+			m_bLocalSpace = true
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMinLength = 0.051
+			m_flMaxLength = 0.15
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flOpStartFadeOutTime = 0.05
+			m_flOpEndFadeOutTime = 0.05
+			m_flOpFadeOscillatePeriod = 3.0
+			m_flEmitRate = 1000.0
+		},
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flOpStartFadeOutTime = 0.01
+			m_flOpEndFadeOutTime = 0.01
+			m_flOpFadeOscillatePeriod = 5.0
+			m_flEmitRate = 5000.0
+		},
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flOpStartFadeOutTime = 0.025
+			m_flOpEndFadeOutTime = 0.025
+			m_flOpFadeOscillatePeriod = 7.0
+			m_flEmitRate = 50000.0
+		},
+	]
+
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/environmental_fx/sparks_generic_random_core.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/environmental_fx/sparks_generic_random_glow.vpcf"
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 48
+}

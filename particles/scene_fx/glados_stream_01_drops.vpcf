@@ -1,0 +1,108 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/water_splash/water_splash_nodepth.vmat"
+			m_flAnimationRate = 2.0
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, -1600.0]
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMax = 0.5
+		},
+		{
+			_class = "C_OP_FadeIn"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 2.0
+			m_flStartScale = 0.5
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_flEndTime_max = 0.5
+			m_flEndTime_min = 0.5
+			m_flStartTime_max = 0.0
+			m_flStartTime_min = 0.0
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 190
+			m_nAlphaMax = 160
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 6.0
+			m_flRadiusMax = 8.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 1.0
+			m_fLifetimeMax = 1.0
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 1.5
+			m_vecDistanceBias = [1.0, 1.0, 0.0]
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMinLength = 0.05
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_nTintBlendMode = 4
+			m_ColorMax = [93, 93, 93, 255]
+			m_ColorMin = [63, 111, 126, 255]
+			m_flTintPerc = 0.35
+		},
+		{
+			_class = "C_INIT_RemapScalar"
+			m_nSetMethod = "PARTICLE_SET_SCALE_CURRENT_VALUE"
+			m_flOutputMax = 0.0
+			m_flOutputMin = 2.0
+			m_flInputMax = 12.0
+		},
+		{
+			_class = "C_INIT_InheritVelocity"
+			m_flVelocityScale = 0.2
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmissionDuration = 12.0
+			m_flOpEndFadeOutTime = 12.0
+			m_flOpStartFadeOutTime = 4.0
+			m_flEmitRate = 80.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 128
+	m_BoundingBoxMin = [-8.0, -8.0, -8.0]
+	m_BoundingBoxMax = [8.0, 8.0, 8.0]
+}

@@ -1,0 +1,88 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderRopes"
+			m_hMaterial = resource:"materials/particle/electricity/electricity_beam_01.vmat"
+			m_hTexture = resource:"materials/particle/electricity/electricity_22_a.vtex"
+			m_flAddSelfAmount = 2
+			m_flOverbrightFactor = 7.0
+			m_flTessScale = 4
+			m_flTextureVScrollRate = -80.0
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+		},
+		{
+			_class = "C_OP_OscillateVector"
+			m_RateMin = [-2.0, -2.0, -2.0]
+			m_RateMax = [2.0, 2.0, 2.0]
+			m_FrequencyMax = [4.0, 4.0, 4.0]
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_bLockRot = true
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.6
+			m_fLifetimeMax = 0.6
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 16.0
+			m_flRadiusMax = 24.0
+		},
+		{
+			_class = "C_INIT_RingWave"
+			m_flInitialSpeedMax = -64.0
+			m_flInitialSpeedMin = -64.0
+			m_flInitialRadius = 48.0
+			m_bEvenDistribution = true
+			m_flParticlesPerOrbit = 40.0
+		},
+		{
+			_class = "C_INIT_PositionWarp"
+			m_vecWarpMin = [1.0, -1.0, 1.0]
+			m_vecWarpMax = [1.0, -1.0, 1.0]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 20
+		},
+	]
+
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/scene_fx/glados_arc_head_01_child.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/scene_fx/electrical_arc_01_system.vpcf"
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 10
+}

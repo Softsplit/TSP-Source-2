@@ -1,0 +1,134 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/vistasmokev1/vistasmokev1_nearcull.vmat"
+			m_hTexture = resource:"materials/particle/vistasmokev1/vistasmokev1.vtex"
+			m_nSequenceCombineMode = "SEQUENCE_COMBINE_MODE_ALPHA_FROM0_RGB_FROM_1"
+			m_bMaxLuminanceBlendingSequence0 = 0
+			m_bMaxLuminanceBlendingSequence1 = 1
+			m_flZoomAmount1 = 4
+			m_flStartFadeSize = 0.4
+			m_flEndFadeSize = 0.55
+			m_flOverbrightFactor = 2.2
+			m_flAnimationRate = 0.5
+			m_flAnimationRate2 = 0.07
+			VisibilityInputs = 
+			{
+				m_flProxyRadius = 8.0
+				m_flRadiusScaleMin = 0.0
+			}
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, 3.0]
+			m_fDrag = 0.1
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.5
+			m_flFadeOutTimeMax = 0.75
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.5
+			m_flEndScale = 2.0
+			m_flBias = 0.6
+		},
+		{
+			_class = "C_OP_SpinUpdate"
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 1
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 4.0
+			m_flRadiusMax = 6.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 1.0
+			m_fLifetimeMax = 1.3
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 25
+			m_nAlphaMax = 40
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [183, 179, 179, 255]
+			m_ColorMax = [81, 81, 81, 255]
+			m_flTintPerc = 0.6
+			m_TintMax = [192, 192, 192, 255]
+		},
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		{
+			_class = "C_INIT_RandomSecondSequence"
+			m_nSequenceMax = 1
+		},
+		{
+			_class = "C_INIT_CreateFromParentParticles"
+			m_flVelocityScale = 0.1
+		},
+		{
+			_class = "C_INIT_CreationNoise"
+			m_flOutputMin = -1.0
+			m_nFieldOutput = 5
+			m_flNoiseScale = 1.0
+		},
+		{
+			_class = "C_INIT_RemapScalar"
+			m_nSetMethod = "PARTICLE_SET_SCALE_CURRENT_VALUE"
+			m_flOutputMax = 0.1
+			m_flOutputMin = 1.0
+			m_nFieldOutput = 7
+		},
+		{
+			_class = "C_INIT_RemapScalar"
+			m_nSetMethod = "PARTICLE_SET_SCALE_CURRENT_VALUE"
+			m_flOutputMax = 0.5
+			m_flOutputMin = 2.0
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flScalePerParentParticle = true
+			m_flEmissionScale = 1.0
+			m_flEmissionDuration = 1.0
+			m_flEmitRate = 45.0
+			m_flOpEndFadeInTime = 0.1
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 400
+	m_BoundingBoxMin = [-64.0, -64.0, -64.0]
+	m_BoundingBoxMax = [64.0, 64.0, 64.0]
+	m_bShouldSort = false
+}

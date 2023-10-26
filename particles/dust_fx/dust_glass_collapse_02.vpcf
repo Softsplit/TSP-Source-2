@@ -1,0 +1,189 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/smoke1/smoke1_nearcull_oriented.vmat"
+			m_nOrientationType = 3
+		},
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/smoke1/smoke1_nearcull_oriented.vmat"
+			VisibilityInputs = 
+			{
+				m_nCPin = 0
+				m_flInputMin = 1.0
+				m_flAlphaScaleMin = 1.0
+				m_flRadiusScaleMin = 0.75
+				m_flRadiusScaleMax = 0.75
+			}
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.015
+			m_Gravity = [0.0, 0.0, -70.0]
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeIn"
+			m_bProportional = false
+			m_flFadeInTimeMin = 0.125
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.75
+			m_flEndScale = 2.0
+			m_flStartScale = 0.6
+		},
+		{
+			_class = "C_OP_RampScalarSpline"
+			m_bEaseOut = true
+			m_RateMax = 1.0
+			m_RateMin = -1.0
+			m_nField = 4
+		},
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_vecCP4Pos = [32.0, 32.0, 32.0]
+			m_nCP4 = 6
+			m_vecCP3Pos = [32.0, 32.0, 32.0]
+			m_nCP3 = 6
+			m_vecCP2Pos = [32.0, 32.0, 32.0]
+			m_nCP2 = 6
+			m_vecCP1Pos = [0.0, -32.0, -32.0]
+			m_nCP1 = 5
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_flStartTime_min = 0.75
+			m_flStartTime_max = 0.9
+		},
+		{
+			_class = "C_OP_RemapVelocityToVector"
+			m_flOpStartFadeOutTime = 0.45
+			m_flOpEndFadeOutTime = 0.45
+			m_nFieldOutput = 21
+			m_bNormalize = true
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.75
+			m_flFadeOutTimeMax = 0.75
+			m_bEaseInAndOut = false
+			m_flFadeBias = 0.85
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMax = 4
+			m_nAlphaMin = 2
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 5
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 24.0
+			m_flRadiusMin = 16.0
+		},
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		{
+			_class = "C_INIT_InheritVelocity"
+			m_flVelocityScale = 0.25
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMax = [15.0, 0.0, 0.0]
+			m_LocalCoordinateSystemSpeedMin = [10.0, 0.0, 0.0]
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_bLocalCoords = true
+			m_OffsetMax = [0.0, 16.0, 16.0]
+			m_OffsetMin = [0.0, -16.0, -16.0]
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 1.8
+			m_fLifetimeMin = 1.7
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [163, 138, 121, 255]
+			m_ColorMax = [198, 167, 146, 255]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_flStartTime = 0.02
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 4
+				m_flRandomMax = 6
+			}
+		},
+	]
+
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/dust_fx/dust_panel_eject_01_b.vpcf"
+		},
+	]
+
+	m_ForceGenerators = 
+	[
+		{
+			_class = "C_OP_RandomForce"
+			m_MaxForce = [20.0, 20.0, 20.0]
+			m_MinForce = [-20.0, -20.0, -20.0]
+			m_flOpStartFadeInTime = 0.45
+			m_flOpEndFadeInTime = 0.45
+		},
+		{
+			_class = "C_OP_AttractToControlPoint"
+			m_flOpStartFadeOutTime = 0.6
+			m_flOpEndFadeOutTime = 0.9
+			m_fForceAmount = -80.0
+			m_fFalloffPower = 0.2
+			m_flOpStartFadeInTime = 0.45
+			m_flOpEndFadeInTime = 0.45
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 16
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_vecCP4Pos = [0.0, 32.0, -32.0]
+			m_vecCP3Pos = [0.0, 32.0, 32.0]
+			m_vecCP2Pos = [0.0, -32.0, 32.0]
+			m_vecCP1Pos = [0.0, -32.0, -32.0]
+		},
+	]
+
+}

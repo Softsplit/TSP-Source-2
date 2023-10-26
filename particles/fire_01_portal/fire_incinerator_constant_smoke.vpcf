@@ -1,0 +1,100 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/smoke1/smoke1.vmat"
+			m_bPerVertexLighting = 1
+			m_flStartFadeSize = 0.9
+			m_flEndFadeSize = 1.3
+			m_flAnimationRate = 0.9
+			m_nAnimationType = "ANIMATION_TYPE_FIT_LIFETIME"
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, 50.0]
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeIn"
+			m_flFadeInTimeMin = 0.2
+			m_flFadeInTimeMax = 0.2
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.7
+			m_flFadeOutTimeMax = 0.8
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 3.0
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 50.0
+			m_flRadiusMax = 80.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 64
+			m_nAlphaMax = 80
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 1.0
+			m_fLifetimeMax = 3.0
+			m_fLifetimeRandExponent = 3.0
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fSpeedMax = 10.0
+			m_LocalCoordinateSystemSpeedMin = [0.0, 0.0, 65.0]
+			m_LocalCoordinateSystemSpeedMax = [0.0, 0.0, 120.0]
+			m_vecDistanceBias = [1.0, 1.0, 0.0]
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 15
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [-128.0, -328.0, 64.0]
+			m_OffsetMax = [128.0, 328.0, 128.0]
+			m_bLocalCoords = true
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMax = [81, 80, 80, 255]
+			m_ColorMin = [153, 153, 153, 255]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 50.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 512
+	m_BoundingBoxMin = [-512.0, -512.0, -521.0]
+	m_BoundingBoxMax = [512.0, 512.0, 512.0]
+}

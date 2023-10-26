@@ -1,0 +1,98 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/electrical_arc/electrical_arc.vmat"
+			m_hTexture = resource:"materials/particle/electrical_arc/electrical_arc.vtex"
+			m_bAdditive = 1
+			m_flOverbrightFactor = 4.0
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_RampScalarSpline"
+			m_nField = 12
+			m_RateMin = -500.0
+			m_RateMax = 500.0
+		},
+		{
+			_class = "C_OP_RampScalarSpline"
+			m_RateMin = -100.0
+			m_RateMax = 30.0
+		},
+		{
+			_class = "C_OP_RampScalarLinear"
+			m_nField = 4
+			m_RateMin = -120.0
+			m_RateMax = 120.0
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.01
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 12.0
+			m_flRadiusMin = 4.0
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomYaw"
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_vecOutputMin = [-128.0, -128.0, -128.0]
+			m_vecOutputMax = [128.0, 128.0, 128.0]
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 3
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMin = 32.0
+			m_fRadiusMax = 32.0
+			m_vecDistanceBias = [1.0, 1.0, 0.0]
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMax = [0.0, 0.0, 90.0]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flOpEndFadeOutTime = 2.0
+			m_flOpStartFadeOutTime = 1.0
+			m_flEmitRate = 150.0
+			m_flEmissionDuration = 2.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 10
+	m_nInitialParticles = 20
+}

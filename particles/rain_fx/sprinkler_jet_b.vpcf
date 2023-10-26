@@ -1,0 +1,109 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_hMaterial = resource:"materials/particle/spray1/spray1_streak.vmat"
+			m_hTexture = resource:"materials/particle/spray1/spray1.vtex"
+			m_bPerVertexLighting = 1
+			m_bBlendFramesSeq0 = 0
+			m_flMaxSize = 0.85
+			m_flStartFadeSize = 0.675
+			m_flEndFadeSize = 0.75
+			m_flOverbrightFactor = 1.5
+			m_flLengthFadeInTime = 0.05
+			m_flAnimationRate = 2.0
+			m_flMaxLength = 128.0
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.05
+			m_Gravity = [0.0, 0.0, -800.0]
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.1
+			m_flFadeOutTimeMax = 0.1
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 0.0
+			m_flBias = 0.245
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 100
+			m_nAlphaMax = 150
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 8.0
+			m_flRadiusMax = 24.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.125
+			m_fLifetimeMax = 0.35
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_bLocalSpace = true
+			m_flNoiseScale = 0.05
+			m_flNoiseScaleLoc = 0.0
+			m_vecAbsVal = [1.0, 1.0, 0.0]
+			m_vecAbsValInv = [1.0, 1.0, 0.0]
+			m_vecOutputMin = [50.0, -100.0, -100.0]
+			m_vecOutputMax = [150.0, 100.0, 100.0]
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMaxLength = 0.085
+			m_flMinLength = 0.025
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [75, 102, 109, 255]
+			m_ColorMax = [237, 237, 237, 255]
+			m_TintMin = [111, 111, 111, 0]
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMax = [250.0, 0.0, 0.0]
+			m_LocalCoordinateSystemSpeedMin = [150.0, 0.0, 0.0]
+			m_fSpeedMax = 150.0
+			m_fSpeedMin = 50.0
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 2
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 275.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 50
+	m_BoundingBoxMin = [-8.0, -8.0, -8.0]
+	m_BoundingBoxMax = [8.0, 8.0, 8.0]
+	m_bShouldSort = false
+}

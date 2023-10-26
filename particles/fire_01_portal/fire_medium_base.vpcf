@@ -1,0 +1,98 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/fire_particle_4/fire_particle_4.vmat"
+			m_hTexture = resource:"materials/particle/fire_particle_4/fire_particle_4.vtex"
+			m_flAddSelfAmount = 0.75
+			m_flOverbrightFactor = 4.5
+			m_flAnimationRate = 0.7
+			m_nOrientationType = 2
+			m_nAnimationType = "ANIMATION_TYPE_FIT_LIFETIME"
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeIn"
+			m_flFadeInTimeMin = 0.2
+			m_flFadeInTimeMax = 0.3
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.2
+			m_flFadeOutTimeMax = 0.3
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 3.0
+			m_flStartScale = 2.0
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 35.0
+			m_flRadiusMax = 60.0
+			m_flRadiusRandExponent = 30.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 64
+			m_nAlphaMax = 128
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 1.0
+			m_fLifetimeMax = 1.25
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_vecDistanceBias = [1.0, 1.0, 0.0]
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_bLocalCoords = true
+			m_OffsetMax = [384.0, 384.0, 32.0]
+			m_OffsetMin = [-384.0, -384.0, 0.0]
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMin = 2
+			m_nSequenceMax = 2
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMax = [163, 162, 162, 255]
+			m_ColorMin = [42, 42, 42, 255]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 150.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 192
+	m_BoundingBoxMax = [10.0, 10.0, 128.0]
+}

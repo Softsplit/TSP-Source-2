@@ -1,0 +1,102 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 20.0, 145.0]
+			m_flOpEndFadeInTime = 0.1
+			m_nOpStrengthScaleSeed = 13484
+			m_fDrag = 0.2
+			m_nMaxConstraintPasses = 1
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_SetChildControlPoints"
+			m_nNumControlPoints = 4
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMin = 1.0
+			m_fRadiusMax = 1.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 0
+			m_nAlphaMax = 0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 7.0
+			m_fLifetimeMax = 8.0
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_bLocalSpace = true
+			m_flNoiseScale = 3.0
+			m_flNoiseScaleLoc = 100.0
+			m_flOffset = 1.0
+			m_vecOutputMin = [3000.0, 6230.0, -6000.0]
+			m_vecOutputMax = [18000.0, -6230.0, 6000.0]
+			m_flOpStartFadeOutTime = 1.0
+			m_flOpEndFadeOutTime = 2.0
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nOpStrengthScaleSeed = 3215
+			m_flOpStrength = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 0.25
+				m_flRandomMax = 1.5
+			}
+			m_nParticlesToEmit = 2
+		},
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flOpStartFadeOutTime = 0.02
+			m_flOpEndFadeOutTime = 0.18
+			m_nOpStrengthScaleSeed = 1345
+			m_flOpStrength = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 0.25
+				m_flRandomMax = 1.5
+			}
+			m_flEmitRate = 500.0
+			m_flEmissionDuration = 0.01
+		},
+	]
+
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/br_train_effects/br_explosion_fluid_smoke_dark_1.vpcf"
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 8
+	m_BoundingBoxMin = [-10.0, -400.0, -10.0]
+	m_BoundingBoxMax = [10.0, -200.0, 10.0]
+	m_bShouldSort = false
+}

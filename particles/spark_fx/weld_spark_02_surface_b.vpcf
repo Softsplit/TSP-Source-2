@@ -1,0 +1,75 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/wake/ring_wake_mod_oriented.vmat"
+			VisibilityInputs = 
+			{
+				m_flProxyRadius = 8.0
+				m_nCPin = 0
+			}
+			m_nOrientationType = 3
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.1
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flStartFadeOutTime = 0.25
+			m_flEndFadeInTime = 1.0
+		},
+		{
+			_class = "C_OP_PositionLock"
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = [255, 126, 0, 255]
+			m_flFadeEndTime = 0.4
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 1.2
+			m_fLifetimeMin = 0.8
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 0.35
+			m_flRadiusMin = 0.35
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_NormalAlignToCP"
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 32
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 50
+	m_flCullRadius = 8.0
+	m_ConstantColor = [131, 227, 255, 255]
+}

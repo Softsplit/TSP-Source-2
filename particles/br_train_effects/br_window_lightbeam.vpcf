@@ -1,0 +1,100 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_hMaterial = resource:"materials/particle/br_fake_window_beam_cone.vmat"
+			VisibilityInputs = 
+			{
+				m_flAlphaScaleMin = 0.01
+				m_flDotInputMax = 0.95
+				m_nCPin = 0
+				m_flDotInputMin = -0.95
+				m_flInputMin = 1.0
+			}
+			m_bConstrainRadius = false
+			m_flMinLength = 200.0
+			m_flLengthFadeInTime = 0.5
+			m_vecTailColorScale = [1.0, 1.0, 1.0]
+			m_flTailAlphaScale = 0.5
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.05
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.7
+			m_flBias = 0.9
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flStartFadeOutTime = 0.65
+			m_flStartAlpha = 0.0
+			m_flEndFadeInTime = 0.1
+		},
+		{
+			_class = "C_OP_PositionLock"
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 220.0
+			m_flRadiusMax = 220.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.1
+			m_fLifetimeMax = 0.1
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 8
+			m_nAlphaMax = 8
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMaxLength = 2.0
+			m_flMinLength = 2.0
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMin = [-20.0, 0.0, 0.0]
+			m_bLocalCoords = true
+			m_LocalCoordinateSystemSpeedMax = [-24.0, 0.0, 0.0]
+			m_fRadiusMax = 1.0
+		},
+		{
+			_class = "C_INIT_RandomColor"
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [-4.0, 0.0, 0.0]
+			m_OffsetMax = [-4.0, 0.0, 0.0]
+			m_bLocalCoords = true
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 20000.0
+			m_flEmissionDuration = 0.05
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 2
+	m_nInitialParticles = 1
+}

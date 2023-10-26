@@ -1,0 +1,93 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/smokesprites_0001.vmat"
+			m_bGammaCorrectVertexColors = false
+			m_hTexture = resource:"materials/particle/smokesprites0001.vtex"
+			m_bPerVertexLighting = 1
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.025
+			m_Gravity = [0.0, 0.0, 22.0]
+		},
+		{
+			_class = "C_OP_FadeOut"
+		},
+		{
+			_class = "C_OP_FadeIn"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.55
+			m_flEndScale = 4.25
+		},
+		{
+			_class = "C_OP_OscillateScalar"
+			m_FrequencyMax = 0.25
+			m_FrequencyMin = 0.1
+			m_RateMax = 0.00125
+			m_RateMin = -0.00125
+			m_nField = 4
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 15
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 38.0
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 34.0
+			m_flRadiusMin = 30.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 5.0
+			m_fLifetimeMin = 4.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMax = 160
+			m_nAlphaMin = 90
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [17, 17, 17, 255]
+			m_ColorMax = [73, 73, 73, 255]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 10
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_BoundingBoxMin = [-64.0, -64.0, -64.0]
+	m_BoundingBoxMax = [64.0, 164.0, 64.0]
+}

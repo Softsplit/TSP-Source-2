@@ -1,0 +1,110 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/fire_particle_4/fire_particle_4.vmat"
+			m_hTexture = resource:"materials/particle/fire_particle_4/fire_particle_4.vtex"
+			m_flAddSelfAmount = 0.75
+			m_flOverbrightFactor = 4.5
+			m_flAnimationRate = 0.7
+			m_nAnimationType = "ANIMATION_TYPE_FIT_LIFETIME"
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.05
+			m_Gravity = [0.0, 0.0, 120.0]
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.75
+			m_flBias = 0.6
+			m_flStartTime = 0.1
+		},
+		{
+			_class = "C_OP_OscillateVector"
+			m_FrequencyMax = [1.0, 1.0, 0.0]
+			m_FrequencyMin = [0.5, 0.5, 0.0]
+			m_RateMax = [0.2, 0.2, 0.0]
+			m_RateMin = [-0.2, -0.2, 0.0]
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMax = 0.5
+			m_flFadeOutTimeMin = 0.4
+			m_bProportional = false
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = [25, 25, 25, 255]
+			m_flFadeStartTime = 0.4
+		},
+		{
+			_class = "C_OP_FadeIn"
+			m_flFadeInTimeMin = 0.025
+			m_flFadeInTimeMax = 0.15
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndTime = 0.15
+			m_flStartScale = 0.0
+			m_flEndScale = 0.75
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 90.0
+			m_flRadiusMin = 70.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMax = 240
+			m_nAlphaMin = 150
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 1.625
+			m_fLifetimeMin = 1.2
+			m_fLifetimeRandExponent = 1.5
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 8.0
+			m_LocalCoordinateSystemSpeedMax = [400.0, 40.0, 40.0]
+			m_LocalCoordinateSystemSpeedMin = [310.0, -40.0, -40.0]
+			m_fSpeedMax = 10.0
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [255, 229, 11, 255]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 10.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 48
+	m_BoundingBoxMax = [10.0, 10.0, 128.0]
+}

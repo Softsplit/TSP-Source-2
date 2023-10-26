@@ -1,0 +1,108 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_hMaterial = resource:"materials/particle/particle_debris_burst/particle_debris_burst_002.vmat"
+			m_bGammaCorrectVertexColors = false
+			m_hTexture = resource:"materials/particle/particle_debris_burst/particle_debris_burst_002.vtex"
+			m_bPerVertexLighting = 1
+			m_flLengthFadeInTime = 1.0
+			m_flMaxLength = 512.0
+			VisibilityInputs = 
+			{
+				m_flProxyRadius = 8.0
+				m_flRadiusScaleMin = 0.0
+			}
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMax = 1.0
+			m_flFadeOutTimeMin = 0.7
+		},
+		{
+			_class = "C_OP_OscillateScalar"
+			m_nField = 3
+			m_RateMin = 60.0
+			m_RateMax = 600.0
+			m_FrequencyMin = 0.125
+			m_FrequencyMax = 0.125
+			m_bProportional = false
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMax = [0.0, 0.0, 330.0]
+			m_LocalCoordinateSystemSpeedMin = [0.0, 0.0, 330.0]
+			m_fSpeedMax = 100.0
+			m_fSpeedMin = 50.0
+			m_vecDistanceBiasAbs = [0.0, 0.0, 1.0]
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 6.0
+			m_flRadiusMin = 6.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 0.35
+			m_fLifetimeMin = 0.125
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMax = 215
+			m_nAlphaMin = 80
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_flTintPerc = 0.55
+			m_ColorMax = [72, 69, 69, 255]
+			m_ColorMin = [174, 174, 174, 255]
+			m_TintMax = [194, 194, 194, 255]
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMinLength = 1.0
+			m_flMaxLength = 1.0
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [0.0, 0.0, 4.0]
+			m_OffsetMax = [0.0, 0.0, 4.0]
+			m_bLocalCoords = true
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nMaxEmittedPerFrame = 100
+			m_nParticlesToEmit = 2
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 40
+	m_BoundingBoxMin = [-64.0, -64.0, -64.0]
+	m_BoundingBoxMax = [64.0, 64.0, 64.0]
+	m_flConstantRadius = 1.0
+	m_ConstantColor = [157, 141, 123, 255]
+	m_bShouldSort = false
+}

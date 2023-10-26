@@ -1,0 +1,89 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/fire_particle_8/fire_particle_8.vmat"
+			m_flAnimationRate = 18.0
+			m_nOrientationType = 1
+			m_bAnimateInFPS = true
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, 100.0]
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeIn"
+			m_flFadeInTimeMin = 0.3
+			m_flFadeInTimeMax = 0.4
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.35
+			m_flFadeOutTimeMax = 0.5
+			m_bProportional = false
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 100.0
+			m_flRadiusMax = 200.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fSpeedMax = 10.0
+			m_LocalCoordinateSystemSpeedMin = [0.0, 0.0, 25.0]
+			m_LocalCoordinateSystemSpeedMax = [0.0, 0.0, 50.0]
+			m_vecDistanceBias = [1.0, 1.0, 0.0]
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 2
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [-1024.0, -1024.0, 0.0]
+			m_OffsetMax = [1024.0, 1024.0, 0.0]
+			m_bLocalCoords = true
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [0.0, 0.0, 0.5]
+			m_OffsetMax = [0.0, 0.0, 0.5]
+			m_bProportional = true
+		},
+		{
+			_class = "C_INIT_SequenceLifeTime"
+			m_flFramerate = 18.0
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 70.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 512
+	m_BoundingBoxMin = [-512.0, -512.0, -521.0]
+	m_BoundingBoxMax = [512.0, 512.0, 512.0]
+}

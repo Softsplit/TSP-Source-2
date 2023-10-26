@@ -1,0 +1,91 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderRopes"
+			m_hMaterial = resource:"materials/particle/electricity/electricity_beam_01.vmat"
+			m_hTexture = resource:"materials/particle/electricity/electricity_22_a.vtex"
+			m_flAddSelfAmount = 2
+			m_flOverbrightFactor = 7.0
+			m_flTextureVScrollRate = -80.0
+			m_flTessScale = 1
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_bLockRot = true
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 0.4
+			m_fLifetimeMin = 0.4
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 18.0
+			m_flRadiusMin = 18.0
+		},
+		{
+			_class = "C_INIT_RingWave"
+			m_flParticlesPerOrbit = 30.0
+			m_bEvenDistribution = true
+			m_flInitialRadius = 32.0
+			m_flInitialSpeedMin = -128.0
+			m_flInitialSpeedMax = -128.0
+		},
+		{
+			_class = "C_INIT_PositionWarp"
+			m_vecWarpMax = [1.0, -1.0, 1.0]
+			m_vecWarpMin = [1.0, -1.0, 1.0]
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [2.0, -4.0, 16.0]
+			m_OffsetMax = [2.0, -4.0, 16.0]
+			m_bLocalCoords = true
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 20
+		},
+	]
+
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/scene_fx/glados_arc_head_02_b.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/scene_fx/glados_arc_head_02_c.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/scene_fx/glados_arc_head_02_small.vpcf"
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 100
+}

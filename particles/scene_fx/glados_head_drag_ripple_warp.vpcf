@@ -1,0 +1,100 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/warp_ripple2.vmat"
+			m_bRefract = true
+			m_hNormalTexture = resource:"materials/particle/warp_ripple2_normal.vtex"
+			m_flRefractAmount = 0.0625
+			m_bPerVertexLighting = 1
+			m_nRefractBlurRadius = 0
+			m_bFogParticles = false
+			m_nOrientationType = 2
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.6
+			m_flFadeOutTimeMax = 0.7
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.4
+			m_flEndScale = 4.0
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.125
+		},
+		{
+			_class = "C_OP_OscillateScalar"
+			m_FrequencyMax = 5.0
+			m_FrequencyMin = 4.0
+			m_RateMax = 6.0
+			m_RateMin = 4.0
+			m_nField = 16
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 2.0
+			m_fLifetimeMax = 2.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 140
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 80.0
+			m_flRadiusMax = 100.0
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_vecDistanceBiasAbs = [0.0, 0.0, 1.0]
+			m_fRadiusMax = 2.0
+			m_fRadiusMin = 2.0
+		},
+		{
+			_class = "C_INIT_RandomColor"
+		},
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		{
+			_class = "C_INIT_CreationNoise"
+			m_flOutputMax = 360.0
+			m_nFieldOutput = 4
+			m_flNoiseScaleLoc = 0.0
+		},
+		{
+			_class = "C_INIT_PositionPlaceOnGround"
+			m_bIncludeWater = true
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 3.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 128
+	m_nMinGPULevel = 1
+}

@@ -1,0 +1,102 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_hMaterial = resource:"materials/particle/antlion_goop3/antlion_goop3_trail.vmat"
+			m_bConstrainRadius = false
+			m_flAnimationRate = 1.0
+			m_flLengthFadeInTime = 0.24
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.05
+			m_Gravity = [0.0, 0.0, -700.0]
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 3.0
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flStartFadeOutTime = 0.1
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_nControlPointNumber = 1
+			m_bLocalCoords = true
+			m_vecDistanceBiasAbs = [0.0, 0.0, 1.0]
+			m_LocalCoordinateSystemSpeedMax = [0.0, 0.0, 10.0]
+			m_fSpeedMax = 30.0
+			m_fSpeedMin = 10.0
+			m_fRadiusMax = 16.0
+			m_fRadiusMin = 2.0
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 0.4
+			m_fLifetimeMin = 0.2
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 50.0
+			m_flRadiusMin = 30.0
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 5
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 200
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_bLocalSpace = true
+			m_vecOutputMax = [1600.0, 1600.0, 1200.0]
+			m_vecOutputMin = [-1400.0, -1400.0, -10.0]
+			m_flNoiseScaleLoc = 1.0
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMinLength = 0.3
+			m_flMaxLength = 0.45
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [27, 155, 229, 255]
+			m_ColorMax = [83, 172, 255, 255]
+			m_flTintPerc = 0.5
+			m_nTintBlendMode = 4
+			m_flLightAmplification = 3.0
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nMaxEmittedPerFrame = 100
+			m_nParticlesToEmit = 20
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 18
+	m_BoundingBoxMin = [-128.0, -128.0, -128.0]
+	m_BoundingBoxMax = [128.0, 128.0, 128.0]
+}

@@ -1,0 +1,115 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/paintblobs/paint_blob_sheet_1.vmat"
+			m_hTexture = resource:"materials/particle/paintblobs/paint_blob_sheet_1.vtex"
+			m_bPerVertexLighting = 1
+			VisibilityInputs = 
+			{
+				m_flAlphaScaleMin = 1.0
+			}
+			m_bAnimateInFPS = true
+			m_flAnimationRate = 27.0
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, -750.0]
+			m_fDrag = 0.17591
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.8
+			m_flEndScale = 0.3
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flStartFadeOutTime = 0.6
+		},
+		{
+			_class = "C_OP_Spin"
+			m_nSpinRateDegrees = 48
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_bLocalCoords = true
+			m_fRadiusMax = 18.0
+			m_fSpeedMin = 2.0
+			m_fSpeedMax = 6.0
+			m_LocalCoordinateSystemSpeedMin = [-350.0, -350.0, -200.0]
+			m_LocalCoordinateSystemSpeedMax = [350.0, 350.0, -10.0]
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.61
+			m_fLifetimeMax = 0.75
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 10.0
+			m_flRadiusMax = 18.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMax = 180
+			m_nAlphaMin = 120
+		},
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMax = [165, 97, 56, 255]
+			m_ColorMin = [162, 115, 48, 255]
+			m_flTintPerc = 0.75
+			m_TintMin = [52, 52, 52, 0]
+			m_nTintBlendMode = 4
+			m_flLightAmplification = 2.0
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 3
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nMaxEmittedPerFrame = 100
+			m_nParticlesToEmit = 40
+		},
+	]
+
+	m_Constraints = 
+	[
+		{
+			_class = "C_OP_WorldTraceConstraint"
+			m_nCollisionMode = "COLLISION_MODE_PER_FRAME_PLANESET"
+			m_flSlideAmount = 1.0
+			m_flRadiusScale = 0.5
+			m_bBrushOnly = true
+			m_CollisionGroupName = "DEBRIS"
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 80
+	m_BoundingBoxMin = [-128.0, -128.0, -128.0]
+	m_BoundingBoxMax = [128.0, 128.0, 128.0]
+}

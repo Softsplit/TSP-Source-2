@@ -1,0 +1,111 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/impact/fleks.vmat"
+			m_hTexture = resource:"materials/particle/impact/fleks.vtex"
+			m_bPerVertexLighting = 1
+			m_flOverbrightFactor = 1.7
+			m_bBlendFramesSeq0 = 0
+			VisibilityInputs = 
+			{
+				m_flProxyRadius = 8.0
+				m_flRadiusScaleMin = 0.0
+			}
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.05
+			m_Gravity = [0.0, 0.0, -400.0]
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOut"
+		},
+		{
+			_class = "C_OP_Spin"
+			m_nSpinRateDegrees = 60
+			m_flOpEndFadeOutTime = 0.75
+			m_flOpStartFadeOutTime = 0.5
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 4
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 0.85
+			m_flRadiusMin = 0.15
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 1.5
+			m_fLifetimeMin = 0.5
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [-20.0, -25.0, 0.0]
+			m_OffsetMax = [20.0, 25.0, 0.0]
+			m_bLocalCoords = true
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMax = [105, 102, 102, 255]
+			m_flTintPerc = 0.75
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_flNoiseScaleLoc = 0.2
+			m_vecOutputMax = [0.0, -122.0, 0.0]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 512.0
+			m_flEmissionDuration = 0.1
+		},
+	]
+
+	m_Constraints = 
+	[
+		{
+			_class = "C_OP_WorldTraceConstraint"
+			m_nCollisionMode = "COLLISION_MODE_USE_NEAREST_TRACE"
+			m_flBounceAmount = 0.1
+			m_flSlideAmount = 0.1
+			m_flRadiusScale = 0.1
+			m_bBrushOnly = true
+			m_CollisionGroupName = "DEBRIS"
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 128
+	m_BoundingBoxMin = [-64.0, -64.0, -64.0]
+	m_BoundingBoxMax = [64.0, 64.0, 64.0]
+	m_flConstantRadius = 3.0
+	m_bShouldSort = false
+}

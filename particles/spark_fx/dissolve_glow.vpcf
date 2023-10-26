@@ -1,0 +1,93 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/toxic_slime/toxic_slime_warp.vmat"
+			m_bRefract = true
+			m_hNormalTexture = resource:"materials/particle/toxic_slime/toxic_slime_warp_normal.vtex"
+			m_flRefractAmount = 0.325
+			m_bPerVertexLighting = 1
+			m_nRefractBlurRadius = 0
+			m_bFogParticles = false
+			VisibilityInputs = 
+			{
+				m_flInputMax = 0.25
+				m_flProxyRadius = 12.0
+			}
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.1
+			m_Gravity = [0.0, 0.0, 100.0]
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_LockToBone"
+			m_flLifeTimeFadeEnd = 1.0
+		},
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_flFadeOutTime = 0.75
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.25
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeRandExponent = 3.0
+			m_fLifetimeMax = 0.425
+			m_fLifetimeMin = 0.2
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 30.0
+			m_flRadiusMax = 40.0
+		},
+		{
+			_class = "C_INIT_CreateOnModel"
+			m_flHitBoxScale = 1.25
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_vecOutputMax = [32.0, 32.0, 32.0]
+			m_vecOutputMin = [-32.0, -32.0, -32.0]
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 60.0
+			m_flEmissionDuration = 2.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 24
+	m_flConstantRadius = 2.0
+	m_ConstantColor = [255, 255, 255, 75]
+	m_flMaxDrawDistance = 1500.0
+	m_bShouldSort = false
+}

@@ -1,0 +1,110 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_hMaterial = resource:"materials/particle/sparks/sparks.vmat"
+			m_hTexture = resource:"materials/particle/sparks/sparks.vtex"
+			m_bAdditive = 1
+			m_bDistanceAlpha = 1
+			m_bSoftEdges = 0
+			m_flOverbrightFactor = 4.0
+			m_bConstrainRadius = false
+			m_flMinLength = 1.0
+			m_flOpStrength = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 2.0
+				m_flRandomMax = 0.5
+			}
+			VisibilityInputs = 
+			{
+				m_flRadiusScaleMin = 0.0
+				m_flProxyRadius = 8.0
+			}
+			m_flMaxLength = 50.0
+			m_flLengthFadeInTime = 0.05
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.05
+			m_Gravity = [0.0, 0.0, -360.0]
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_flEndTime_max = 0.2
+			m_flEndTime_min = 0.1
+			m_flStartTime_max = 0.0
+			m_flStartTime_min = 0.0
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMax = [550.0, 200.0, 200.0]
+			m_LocalCoordinateSystemSpeedMin = [150.0, -200.0, -200.0]
+			m_fSpeedMax = 100.0
+			m_vecDistanceBiasAbs = [1.0, 0.0, 0.0]
+			m_fRadiusMax = 1.0
+			m_bLocalCoords = true
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeRandExponent = 4.0
+			m_fLifetimeMax = 2.0
+			m_fLifetimeMin = 0.1
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_flUpdateThreshold = 128.0
+			m_ColorMax = [242, 206, 99, 255]
+			m_ColorMin = [238, 218, 163, 255]
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 5.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 128
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 1
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmissionDuration = 6.0
+			m_flEmitRate = 120.0
+		},
+		{
+			_class = "C_OP_NoiseEmitter"
+			m_flEmissionDuration = 5.0
+			m_flOutputMax = 150.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 500
+	m_flCullRadius = 150.0
+	m_flConstantRadius = 2.0
+	m_flMaxDrawDistance = 2500.0
+	m_bShouldSort = false
+	m_flAggregateRadius = 512.0
+}

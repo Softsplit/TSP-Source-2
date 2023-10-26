@@ -1,0 +1,126 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderRopes"
+			m_hMaterial = resource:"materials/particle/beam_generic_4_add.vmat"
+			m_hTexture = resource:"materials/particle/beam_generic_4.vtex"
+			m_bAdditive = 1
+			m_flTessScale = 6
+			m_flTextureVScrollRate = 0.1
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_nControlPointNumber = 3
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+		},
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_nOpEndCapState = 0
+		},
+		{
+			_class = "C_OP_OscillateScalar"
+			m_nOpEndCapState = 0
+			m_nField = 16
+			m_RateMin = 150.0
+			m_RateMax = -150.0
+			m_FrequencyMin = 68.0
+			m_FrequencyMax = 88.0
+		},
+		{
+			_class = "C_OP_RampScalarLinearSimple"
+			m_nOpEndCapState = 1
+			m_nField = 16
+			m_Rate = -2.0
+		},
+		{
+			_class = "C_OP_OscillateVector"
+			m_nOpEndCapState = 1
+			m_RateMin = [0.0, 0.0, -2.0]
+			m_RateMax = [0.0, 0.0, 2.0]
+			m_FrequencyMin = [1.0, 1.0, 2.0]
+			m_FrequencyMax = [1.0, 1.0, 5.0]
+		},
+		{
+			_class = "C_OP_DistanceToCP"
+			m_flInputMin = 32.0
+			m_flInputMax = 80.0
+			m_flOutputMin = 18.0
+			m_nStartCP = 4
+			m_bActiveRange = true
+		},
+		{
+			_class = "C_OP_DistanceToCP"
+			m_flInputMin = 32.0
+			m_flInputMax = 80.0
+			m_nFieldOutput = 7
+			m_flOutputMin = 3.0
+			m_nStartCP = 4
+			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
+		},
+		{
+			_class = "C_OP_DistanceToCP"
+			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
+			m_nStartCP = 5
+			m_flOutputMin = 3.0
+			m_nFieldOutput = 7
+			m_flInputMax = 80.0
+			m_flInputMin = 32.0
+		},
+		{
+			_class = "C_OP_DistanceToCP"
+			m_bActiveRange = true
+			m_nStartCP = 5
+			m_flOutputMin = 24.0
+			m_flInputMax = 80.0
+			m_flInputMin = 32.0
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateSequentialPathV2"
+			m_flNumToAssign = 24.0
+			m_PathParams = 
+			{
+				m_nEndControlPointNumber = 1
+			}
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 3.0
+			m_fLifetimeMin = 3.0
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 24
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 24
+	m_flConstantRadius = 1.0
+	m_ConstantColor = [106, 178, 198, 15]
+	m_bShouldSort = false
+	m_nMaxRecursionDepth = 0
+}

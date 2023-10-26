@@ -1,0 +1,145 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/vistasmokev1_add_nearcull.vmat"
+			m_hTexture = resource:"materials/particle/vistasmokev1/vistasmokev1.vtex"
+			m_bAdditive = 1
+			m_nSequenceCombineMode = "SEQUENCE_COMBINE_MODE_ALPHA_FROM0_RGB_FROM_1"
+			m_bMaxLuminanceBlendingSequence0 = 0
+			m_bMaxLuminanceBlendingSequence1 = 1
+			m_flZoomAmount1 = 4
+			m_flStartFadeSize = 0.35
+			m_flEndFadeSize = 0.625
+			m_flOverbrightFactor = 2.2
+			m_bBlendFramesSeq0 = 0
+			m_nOrientationType = 2
+			m_flAnimationRate = 0.35
+			m_flAnimationRate2 = 0.06
+		},
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/vistasmokev1_add_nearcull.vmat"
+			m_hTexture = resource:"materials/particle/vistasmokev1/vistasmokev1.vtex"
+			m_bAdditive = 1
+			m_nSequenceCombineMode = "SEQUENCE_COMBINE_MODE_ALPHA_FROM0_RGB_FROM_1"
+			m_bMaxLuminanceBlendingSequence0 = 0
+			m_bMaxLuminanceBlendingSequence1 = 1
+			m_flZoomAmount1 = 4
+			m_flStartFadeSize = 0.35
+			m_flEndFadeSize = 0.625
+			m_flOverbrightFactor = 2.2
+			m_bBlendFramesSeq0 = 0
+			VisibilityInputs = 
+			{
+				m_nCPin = 0
+				m_flInputMin = 1.0
+				m_flAlphaScaleMin = 0.25
+				m_flAlphaScaleMax = 0.25
+				m_flRadiusScaleMin = 0.75
+				m_flRadiusScaleMax = 0.75
+			}
+			m_flAnimationRate = 0.6015
+			m_flAnimationRate2 = 0.07
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 1.2
+			m_flStartScale = 0.5
+			m_flBias = 0.25
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, 3.0]
+			m_fDrag = 0.05
+		},
+		{
+			_class = "C_OP_OscillateScalar"
+			m_nField = 4
+			m_RateMin = -0.1
+			m_RateMax = 0.1
+			m_FrequencyMin = 0.125
+			m_FrequencyMax = 0.5
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.5
+		},
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_flFadeOutTime = 0.5
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_vecDistanceBias = [1.0, 1.0, 0.0]
+			m_LocalCoordinateSystemSpeedMin = [0.0, 0.0, 8.0]
+			m_LocalCoordinateSystemSpeedMax = [0.0, 0.0, 32.0]
+			m_fRadiusMin = 32.0
+			m_fRadiusMax = 128.0
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 196.0
+			m_flRadiusMax = 250.0
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 1
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 4.0
+			m_fLifetimeMax = 8.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 100
+			m_nAlphaMax = 200
+		},
+		{
+			_class = "C_INIT_RandomSecondSequence"
+			m_nSequenceMin = 50
+			m_nSequenceMax = 59
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_flLightAmplification = 2.0
+			m_nTintBlendMode = 4
+			m_TintMin = [26, 26, 26, 0]
+			m_flTintPerc = 0.65
+			m_ColorMax = [68, 77, 47, 255]
+			m_ColorMin = [64, 57, 47, 255]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 2.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 4
+	m_BoundingBoxMin = [-256.0, -256.0, -64.0]
+	m_BoundingBoxMax = [256.0, 256.0, 128.0]
+}

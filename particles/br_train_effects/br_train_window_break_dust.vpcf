@@ -1,0 +1,97 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/smoke1/smoke1.vmat"
+			m_bPerVertexLighting = 1
+			m_flStartFadeSize = 0.9
+			m_flEndFadeSize = 1.3
+			m_bAnimateInFPS = true
+			m_flAnimationRate = 60.0
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, -100.0]
+			m_fDrag = 0.1
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 6.0
+			m_flBias = 0.95
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_vecDistanceBiasAbs = [0.0, 0.0, 1.0]
+			m_bLocalCoords = true
+			m_LocalCoordinateSystemSpeedMin = [0.0, -20.0, -20.0]
+			m_LocalCoordinateSystemSpeedMax = [120.0, 20.0, 20.0]
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 7.0
+			m_flRadiusMax = 12.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 6
+			m_nAlphaMax = 20
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [169, 169, 169, 255]
+			m_ColorMax = [114, 114, 114, 255]
+			m_flTintPerc = 0.1
+		},
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 9
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 2.0
+			m_fLifetimeMin = 1.0
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_bLocalCoords = true
+			m_OffsetMax = [6.0, 1.0, 10.0]
+			m_OffsetMin = [-6.0, -1.0, -10.0]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 6
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 50
+	m_BoundingBoxMin = [-4.0, -4.0, -4.0]
+	m_BoundingBoxMax = [4.0, 4.0, 4.0]
+	m_flConstantRadius = 1.0
+	m_ConstantColor = [157, 141, 123, 255]
+}

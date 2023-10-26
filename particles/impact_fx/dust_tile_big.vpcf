@@ -1,0 +1,140 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/vistasmokev1/vistasmokev1.vmat"
+			VisibilityInputs = 
+			{
+				m_flRadiusScaleMin = 0.0
+				m_flProxyRadius = 8.0
+			}
+			m_flAnimationRate = 2.0
+			m_flAnimationRate2 = 0.04
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, -1200.0]
+			m_fDrag = 0.4
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMin = 0.5
+			m_flFadeOutTimeMax = 0.5
+		},
+		{
+			_class = "C_OP_Spin"
+			m_nSpinRateDegrees = 2
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.25
+			m_flEndScale = 2.5
+			m_flBias = 0.926
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMin = [-325.0, -325.0, -500.0]
+			m_LocalCoordinateSystemSpeedMax = [325.0, 325.0, 1600.0]
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 1
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 30.0
+			m_flRadiusMax = 50.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 2.0
+			m_fLifetimeMax = 4.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 48
+			m_nAlphaMax = 64
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_flUpdateThreshold = 128.0
+			m_TintMax = [101, 107, 104, 255]
+			m_ColorMin = [72, 77, 74, 255]
+			m_ColorMax = [58, 61, 59, 255]
+			m_flTintPerc = 0.35
+			m_TintMin = [58, 61, 59, 255]
+		},
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		{
+			_class = "C_INIT_RandomSecondSequence"
+			m_nSequenceMax = 6
+			m_nSequenceMin = 6
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_bLocalCoords = true
+			m_OffsetMax = [80.0, 180.0, 0.0]
+			m_OffsetMin = [-80.0, -180.0, 0.0]
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 24
+			m_nMaxEmittedPerFrame = 100
+		},
+	]
+
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/impact_fx/dust_tile_big_child_debris.vpcf"
+		},
+	]
+
+	m_ForceGenerators = 
+	[
+		{
+			_class = "C_OP_RandomForce"
+			m_MaxForce = [400.0, 400.0, 800.0]
+			m_MinForce = [-400.0, -400.0, -800.0]
+		},
+		{
+			_class = "C_OP_TwistAroundAxis"
+			m_fForceAmount = 100.0
+		},
+		{
+			_class = "C_OP_AttractToControlPoint"
+			m_fFalloffPower = -0.1
+			m_fForceAmount = -100.0
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 24
+	m_BoundingBoxMin = [-64.0, -64.0, -64.0]
+	m_BoundingBoxMax = [64.0, 64.0, 64.0]
+	m_bShouldSort = false
+}

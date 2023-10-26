@@ -1,0 +1,104 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_hMaterial = resource:"materials/particle/particle_flares/particle_flare_001_nodepth_noz.vmat"
+			m_hTexture = resource:"materials/particle/particle_flares/particle_flare_001.vtex"
+			m_bAdditive = 1
+			m_flOverbrightFactor = 2.5
+			m_bDisableZBuffering = 1
+			m_flStartFadeSize = 2
+			m_flEndFadeSize = 3
+			VisibilityInputs = 
+			{
+				m_nCPin = 0
+				m_flProxyRadius = 2.0
+				m_flInputMax = 0.25
+				m_flAlphaScaleMax = 4.0
+				m_flRadiusScaleMax = 2.0
+			}
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.5
+		},
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 4.0
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMax = 1.0
+			m_flFadeOutTimeMin = 1.0
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMin = [0.0, 0.0, 200.0]
+			m_LocalCoordinateSystemSpeedMax = [0.0, 0.0, 200.0]
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.1
+			m_fLifetimeMax = 0.1
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_bLocalCoords = true
+			m_OffsetMax = [0.0, 0.0, 1.0]
+			m_OffsetMin = [0.0, 0.0, 1.0]
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 12.0
+			m_flRadiusMin = 12.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 90
+			m_nAlphaMax = 120
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [75, 73, 53, 255]
+			m_ColorMax = [62, 65, 90, 255]
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMax = [0.0, 0.0, 1.0]
+			m_bLocalCoords = true
+			m_bProportional = true
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 1
+			m_nMaxEmittedPerFrame = 100
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 40
+	m_flConstantRadius = 1.0
+	m_bShouldSort = false
+}

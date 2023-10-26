@@ -1,0 +1,137 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	m_nBehaviorVersion = 8
+	_class = "CParticleSystemDefinition"
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_hMaterial = resource:"materials/particle/water/water_beam_01_warp_alpha.vmat"
+			m_bConstrainRadius = false
+			m_flMaxLength = 512.0
+			m_flLengthFadeInTime = 0.1
+		},
+	]
+
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [0.0, 0.0, -1600.0]
+		},
+		{
+			_class = "C_OP_FadeOut"
+			m_flFadeOutTimeMax = 0.5
+		},
+		{
+			_class = "C_OP_FadeIn"
+			m_flFadeInTimeMax = 0.1
+			m_flFadeInTimeMin = 0.1
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 0.0
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_flEndTime_max = 2.0
+			m_flEndTime_min = 2.0
+			m_flStartTime_max = 0.0
+			m_flStartTime_min = 0.0
+		},
+	]
+
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 190
+			m_nAlphaMax = 160
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 9.0
+			m_flRadiusMax = 11.0
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.25
+			m_fLifetimeMax = 0.5
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 1.5
+			m_vecDistanceBias = [1.0, 1.0, 0.0]
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMinLength = 0.05
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [63, 111, 126, 255]
+			m_flTintPerc = 0.35
+		},
+		{
+			_class = "C_INIT_RemapScalar"
+			m_flInputMin = 7.0
+			m_flEndTime = 22.0
+			m_flStartTime = 8.0
+			m_nSetMethod = "PARTICLE_SET_SCALE_CURRENT_VALUE"
+			m_flOutputMax = 0.0
+			m_flOutputMin = 2.0
+			m_flInputMax = 9.0
+		},
+		{
+			_class = "C_INIT_InheritVelocity"
+			m_flVelocityScale = 0.2
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [56.0, -48.0, 0.0]
+			m_OffsetMax = [56.0, -48.0, 0.0]
+			m_bLocalCoords = true
+		},
+		{
+			_class = "C_INIT_RemapScalar"
+			m_flStartTime = 0.0
+			m_flEndTime = 6.0
+			m_flInputMax = 5.0
+			m_nSetMethod = "PARTICLE_SET_SCALE_CURRENT_VALUE"
+		},
+		{
+			_class = "C_INIT_RemapScalar"
+			m_nSetMethod = "PARTICLE_SET_SCALE_CURRENT_VALUE"
+			m_nFieldOutput = 10
+			m_flInputMax = 5.0
+			m_flEndTime = 6.0
+			m_flStartTime = 0.0
+		},
+	]
+
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmissionDuration = 7.0
+			m_flOpEndFadeOutTime = 7.0
+			m_flOpStartFadeOutTime = 5.0
+			m_flEmitRate = 80.0
+		},
+	]
+
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/scene_fx/glados_stream_03_b.vpcf"
+		},
+	]
+
+	m_bPreventnamebasedlookup = false
+	m_nMaxParticles = 128
+	m_BoundingBoxMin = [-8.0, -8.0, -8.0]
+	m_BoundingBoxMax = [8.0, 8.0, 8.0]
+}
