@@ -3,7 +3,7 @@
 </p>
 <hr>
 
-[The Stanley Parable: Source 2](https://asset.party/softsplit/thestanleyparables2) is an ambitious project powered by s&box, developed by Facepunch, the spiritual successor to Garry's Mod. The project's goal is to recreate the unique experience and mechanics of The Stanley Parable on Source 2, making full use of the engine's updated graphics and capabilities. This project is proudly presented by Softsplit Studios and is open source, inviting both players and developers to explore its inner workings.
+[The Stanley Parable: Source 2](https://asset.party/softsplit/thestanleyparables2) is an ambitious project powered by S&box, developed by Facepunch Studios. The project's goal is to recreate the unique experience and mechanics of The Stanley Parable on Source 2, making full use of the engine's updated graphics and capabilities. This project is proudly presented by Softsplit Studios and is open source, inviting both players and developers to explore its inner workings.
 
 ## Installation
 
