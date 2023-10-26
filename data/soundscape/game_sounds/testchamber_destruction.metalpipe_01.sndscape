@@ -1,0 +1,42 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		dsp = 1
+		playrandom = 
+		{
+			volume = 1.0
+			pitch = "95, 105"
+			time = "4.0, 12.0"
+			position = "random"
+			soundlevel = "SNDLVL_85dB"
+			rndwave = 
+			{
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_01.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_02.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_03.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_04.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_05.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_06.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_07.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_08.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_09.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_10.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_11.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_12.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_13.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_14.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_15.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_16.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_17.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_18.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_19.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_20.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_21.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_22.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_23.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_pipe_clang_24.vsnd"
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		playrandom = 
+		{
+			time = "6,14"
+			volume = ".45,1"
+			pitch = "65,105"
+			position = "random"
+			rndwave = 
+			{
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_01.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_02.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_03.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_04.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_05.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_06.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_07.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_08.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_09.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_10.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_11.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_12.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_14.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_15.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_16.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_17.vsnd"
+				wave = "sounds/ambient/industrial/amb_muffled_lo_mach_18.vsnd"
+			}
+		}
+	}
+}

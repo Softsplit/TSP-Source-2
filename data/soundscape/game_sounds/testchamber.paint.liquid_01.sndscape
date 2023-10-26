@@ -1,0 +1,21 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		dsp = 1
+		fadetime = 1
+		playlooping = 
+		{
+			volume = 0.33
+			wave = "sounds/ambient/nature/water/amb_indoor_water_sludge_lp_01.vsnd"
+			pitch = 100
+			origin = "-2549.379639, 398.605408, -45.274536;"
+			soundlevel = "SNDLVL_80dB"
+		}
+		playsoundscape = 
+		{
+			name = "util_lo.end_mach"
+			volume = 0.38
+		}
+	}
+}

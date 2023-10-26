@@ -1,0 +1,20 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		playrandom = 
+		{
+			time = "18,33"
+			volume = ".2,.4"
+			pitch = "60,80"
+			position = "random"
+			rndwave = 
+			{
+				wave = "sounds/world/finale4_random_destruction_01.vsnd"
+				wave = "sounds/world/finale4_random_destruction_02.vsnd"
+				wave = "sounds/world/finale4_random_destruction_03.vsnd"
+				wave = "sounds/world/finale4_random_destruction_04.vsnd"
+			}
+		}
+	}
+}

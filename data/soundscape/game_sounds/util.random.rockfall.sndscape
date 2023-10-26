@@ -1,0 +1,22 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		playrandom = 
+		{
+			volume = 1
+			pitch = "85,105"
+			time = "19.0, 35.0"
+			position = "random"
+			rndwave = 
+			{
+				wave = "sounds/ambient/organic/amb_rock_fall_01.vsnd"
+				wave = "sounds/ambient/organic/amb_rock_fall_02.vsnd"
+				wave = "sounds/ambient/organic/amb_rock_fall_03.vsnd"
+				wave = "sounds/ambient/organic/amb_rock_fall_04.vsnd"
+				wave = "sounds/ambient/organic/amb_rock_fall_05.vsnd"
+				wave = "sounds/ambient/organic/amb_rock_fall_06.vsnd"
+			}
+		}
+	}
+}

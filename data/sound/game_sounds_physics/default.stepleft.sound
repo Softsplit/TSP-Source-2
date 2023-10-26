@@ -1,0 +1,28 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = false
+		Volume = 0.7
+		VolumeRandom = 0
+		Pitch = 0.95
+		PitchRandom = 0.099999964
+		Decibels = 150
+		Sounds = 
+[
+resource:"sounds/player_stanley/footsteps/FS_Concrete_01.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_02.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_03.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_04.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_05.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_06.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_07.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_08.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_09.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_10.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_11.vsnd",
+resource:"sounds/player_stanley/footsteps/FS_Concrete_12.vsnd",
+]
+		SelectionMode = 3
+	}
+}

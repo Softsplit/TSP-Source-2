@@ -2,60 +2,252 @@
   "Title": "The Stanley Parable: Source 2",
   "Type": "game",
   "Org": "softsplit",
-  "Ident": "thestanleyparable",
-  "Tags": null,
+  "Ident": "thestanleyparables2",
+  "Tags": "remake thestanleyparable walking-simulator",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
-  "Resources": "",
-  "MenuResources": "fonts/*\nui/*\nMenu/*\nsounds/ui/*\nsounds/gameui/*\nsounds/raphael*\nsounds/fx/becret.wav\nsounds/fx/bark*",
+  "Resources": "*",
+  "MenuResources": "/UI/Menu/*\n/sounds/ui/*\n/fonts/*\ndata/sound/game_sounds_ui/*\nsounds/gameui/*",
   "HasCode": true,
-  "CodePath": "/code/",
+  "CodePath": "code",
   "PackageReferences": [],
   "EditorReferences": null,
   "Metadata": {
-    "MaxPlayers": 1,
+    "MapList": [],
     "MinPlayers": 1,
-    "GameNetworkType": "Singleplayer",
-    "MapSelect": "Unrestricted",
-    "MapList": [
-      "facepunch.square"
-    ],
-    "RankType": "None",
+    "MaxPlayers": 1,
+    "MapSelect": "Tagged",
     "PerMapRanking": false,
     "LeaderboardType": "None",
-    "GameCategory": "TechDemos",
-    "ProjectTemplate": null,
-    "CsProjName": "",
-    "HttpAllowList": null,
-    "SavedGames": false,
-    "MapDependentSaves": false,
-    "SaveFormatVersion": 1001,
-    "TickRate": 50,
-    "LaunchConfigs": [
-      {
-        "Name": "The Stanley Parable",
-        "GameIdent": "softsplit.thestanleyparable#local",
-        "MapName": "softsplit.seriousroom",
-        "MaxPlayers": 1,
-        "GameSettings": {},
-        "Addons": "",
-        "PreLaunchCommand": "",
-        "PostLaunchCommand": ""
-      }
-    ],
+    "RankType": "None",
+    "GameNetworkType": "Singleplayer",
+    "Collision": {
+      "Defaults": {
+        "solid": "Collide",
+        "trigger": "Trigger",
+        "ladder": "Ignore",
+        "water": "Trigger",
+        "player": "Unset",
+        "weapon": "Unset",
+        "projectile": "Unset",
+        "debris": "Unset",
+        "interactable": "Unset",
+        "playerclip": "Unset",
+        "sky": "Unset"
+      },
+      "Pairs": [
+        {
+          "a": "solid",
+          "b": "solid",
+          "r": "Collide"
+        },
+        {
+          "a": "trigger",
+          "b": "playerclip",
+          "r": "Ignore"
+        },
+        {
+          "a": "solid",
+          "b": "trigger",
+          "r": "Trigger"
+        },
+        {
+          "a": "playerclip",
+          "b": "solid",
+          "r": "Collide"
+        },
+        {
+          "a": "trigger",
+          "b": "player",
+          "r": "Trigger"
+        },
+        {
+          "a": "ladder",
+          "b": "player"
+        },
+        {
+          "a": "player",
+          "b": "player"
+        },
+        {
+          "a": "solid",
+          "b": "player"
+        },
+        {
+          "a": "debris",
+          "b": "interactable",
+          "r": "Ignore"
+        },
+        {
+          "a": "player",
+          "b": "weapon",
+          "r": "Ignore"
+        },
+        {
+          "a": "player",
+          "b": "projectile",
+          "r": "Ignore"
+        },
+        {
+          "a": "debris",
+          "b": "debris",
+          "r": "Collide"
+        },
+        {
+          "a": "player",
+          "b": "interactable",
+          "r": "Trigger"
+        },
+        {
+          "a": "trigger",
+          "b": "trigger"
+        },
+        {
+          "a": "solid",
+          "b": "interactable",
+          "r": "Collide"
+        },
+        {
+          "a": "solid",
+          "b": "debris",
+          "r": "Collide"
+        },
+        {
+          "a": "trigger",
+          "b": "interactable",
+          "r": "Ignore"
+        },
+        {
+          "a": "trigger",
+          "b": "debris",
+          "r": "Ignore"
+        },
+        {
+          "a": "ladder",
+          "b": "interactable",
+          "r": "Collide"
+        },
+        {
+          "a": "ladder",
+          "b": "debris",
+          "r": "Collide"
+        },
+        {
+          "a": "water",
+          "b": "debris",
+          "r": "Collide"
+        },
+        {
+          "a": "water",
+          "b": "interactable",
+          "r": "Collide"
+        },
+        {
+          "a": "player",
+          "b": "debris",
+          "r": "Ignore"
+        },
+        {
+          "a": "weapon",
+          "b": "debris",
+          "r": "Ignore"
+        },
+        {
+          "a": "projectile",
+          "b": "debris",
+          "r": "Ignore"
+        },
+        {
+          "a": "interactable",
+          "b": "interactable",
+          "r": "Ignore"
+        },
+        {
+          "a": "projectile",
+          "b": "interactable",
+          "r": "Ignore"
+        },
+        {
+          "a": "weapon",
+          "b": "interactable",
+          "r": "Ignore"
+        },
+        {
+          "a": "projectile",
+          "b": "projectile",
+          "r": "Ignore"
+        },
+        {
+          "a": "weapon",
+          "b": "weapon"
+        },
+        {
+          "a": "trigger",
+          "b": "projectile"
+        },
+        {
+          "a": "projectile",
+          "b": "playerclip",
+          "r": "Ignore"
+        },
+        {
+          "a": "ladder",
+          "b": "playerclip",
+          "r": "Collide"
+        },
+        {
+          "a": "water",
+          "b": "playerclip",
+          "r": "Collide"
+        },
+        {
+          "a": "player",
+          "b": "playerclip"
+        },
+        {
+          "a": "projectile",
+          "b": "sky",
+          "r": "Ignore"
+        },
+        {
+          "a": "trigger",
+          "b": "sky",
+          "r": "Ignore"
+        },
+        {
+          "a": "solid",
+          "b": "sky",
+          "r": "Collide"
+        },
+        {
+          "a": "ladder",
+          "b": "sky",
+          "r": "Collide"
+        },
+        {
+          "a": "water",
+          "b": "sky",
+          "r": "Collide"
+        }
+      ]
+    },
     "Compiler": {
-      "RootNamespace": "TheStanleyParable",
-      "DefineConstants": "THESTANLEYPARABLE;ADDON;DEBUG",
-      "NoWarn": "1701;1702;1591;",
-      "References": [],
-      "DistinctReferences": []
+      "RootNamespace": "THESTANLEYPARABLE",
+      "DefineConstants": "SANDBOX;ADDON;DEBUG",
+      "NoWarn": "1701;1702;1591;"
+    },
+    "GameCategory": "Shooter",
+    "GameSettings": {},
+    "ControlModes": {
+      "Keyboard": true
     },
     "ParentPackage": "",
-    "ControlModes": {
-      "Keyboard": true,
-      "Gamepad": true
-    },
+    "DefaultLeaderboards": null,
+    "Summary": "Welcome to The Stanley Parable: Source 2\nBugs are to be expected and essential features may be missing",
+    "Description": "",
+    "Public": true,
+    "CsProjName": "",
     "InputSettings": {
       "Actions": [
         {
@@ -84,35 +276,39 @@
           "GroupName": "Movement"
         },
         {
-          "Name": "use",
-          "KeyboardCode": "e",
-          "GamepadCode": "Y",
-          "GroupName": "Actions"
-        },
-        {
-          "Name": "Voice",
-          "KeyboardCode": "v",
-          "GamepadCode": "RightJoystickButton",
-          "GroupName": "Other"
-        },
-        {
-          "Name": "Chat",
-          "KeyboardCode": "enter",
-          "GroupName": "Other"
-        },
-        {
-          "Name": "attack1",
-          "KeyboardCode": "MOUSE1",
-          "GamepadCode": "RightTrigger",
-          "GroupName": "Actions"
-        },
-        {
           "Name": "Duck",
-          "KeyboardCode": "CTRL",
+          "KeyboardCode": "ctrl",
           "GamepadCode": "B",
           "GroupName": "Movement"
+        },
+        {
+          "Name": "Attack1",
+          "KeyboardCode": "mouse1",
+          "GamepadCode": "RightTrigger",
+          "GroupName": "Combat"
+        },
+        {
+          "Name": "Use",
+          "KeyboardCode": "e",
+          "GamepadCode": "Y",
+          "GroupName": "Combat"
         }
       ]
-    }
+    },
+    "ReplaceTags": "thestanleyparable remake walking-simulator",
+    "HttpAllowList": null,
+    "TickRate": 50,
+    "LaunchConfigs": [
+      {
+        "Name": "Begin The Game",
+        "GameIdent": "softsplit.thestanleyparables2#local",
+        "MapName": "softsplit.seriousroom",
+        "MaxPlayers": 1,
+        "GameSettings": {},
+        "Addons": "",
+        "PreLaunchCommand": "sv_password password",
+        "PostLaunchCommand": ""
+      }
+    ]
   }
 }

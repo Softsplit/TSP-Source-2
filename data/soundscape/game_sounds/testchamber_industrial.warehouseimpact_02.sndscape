@@ -1,0 +1,64 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		dsp = 1
+		playrandom = 
+		{
+			volume = 1.0
+			pitch = "85, 100"
+			time = "4.0, 11.0"
+			position = "random"
+			soundlevel = "SNDLVL_85dB"
+			rndwave = 
+			{
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_01.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_02.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_03.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_04.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_05.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_06.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_07.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_08.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_09.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_10.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_11.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_12.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_13.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_14.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_15.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_16.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_17.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_18.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_19.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_20.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_21.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_22.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_23.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_24.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_25.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_26.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_27.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_28.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_29.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_30.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_31.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_32.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_33.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_34.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_35.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_36.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_37.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_38.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_39.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_40.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_41.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_42.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_43.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_44.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_45.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_imp_warehouse_46.vsnd"
+			}
+		}
+	}
+}

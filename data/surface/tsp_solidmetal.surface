@@ -1,0 +1,47 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		BaseSurface = "data/surface/default.surface"
+		AudioMaterial = null
+		Description = "tsp_solidmetal"
+		Friction = 0.8
+		Elasticity = 0.1
+		Density = 2700
+		Thickness = 0
+		Dampening = 0
+		BounceThreshold = 50
+		ImpactEffects = 
+		{
+			Regular = 
+			[
+				resource:"",
+			]
+			Bullet =
+			[
+				resource:"",
+			]
+			BulletDecal =
+			[
+				resource:"data/decal/impact.metal.decal",
+			]
+		}
+		Sounds = 
+		{
+			FootLeft = "SolidMetal.StepLeft"
+			FootRight = "SolidMetal.StepRight"
+			FootLaunch = ""
+			FootLand = ""
+			Bullet = "SolidMetal.BulletImpact"
+			SmoothScrape = "SolidMetal.ScrapeSmooth"
+			RoughScrape = "SolidMetal.ScrapeRough"
+			ImpactHard = "SolidMetal.ImpactHard"
+			ImpactSoft = "SolidMetal.ImpactSoft"
+		}
+		Breakables = 
+		{
+			BreakSound = ""
+			GenericGibs = null
+		}
+	}
+}

@@ -1,0 +1,562 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		decals = 
+		[
+            {
+				material = resource:"materials/decals/concrete/shot1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/concrete/shot2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/concrete/shot3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/concrete/shot4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/concrete/shot5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/metal/shot1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/metal/shot2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/metal/shot3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/metal/shot4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/metal/shot5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/wood/shot1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/wood/shot2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/wood/shot3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/wood/shot4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/wood/shot5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/glass/shot1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/glass/shot2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/glass/shot3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/glass/shot4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/glass/shot5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/flesh/blood1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/flesh/blood2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/flesh/blood3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/flesh/blood4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/flesh/blood5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bloodyflesh/blood1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bloodyflesh/blood2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bloodyflesh/blood3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bloodyflesh/blood4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bloodyflesh/blood5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/alienflesh/shot1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/alienflesh/shot2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/alienflesh/shot3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/alienflesh/shot4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/alienflesh/shot5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/scorch1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/scorch2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/blood1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/blood2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/blood3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/blood4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/blood5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/blood6.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/blood7.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/blood8.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/break1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/break2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/break3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot4.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot5.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bproof1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/smscorch1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/smscorch2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/smscorch3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/scorchfade.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/beersplash.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/splash1.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/splash2.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/splash3.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/smscorch1_subrect.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/security_camera_detachment.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot1model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot2model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot3model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot4model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bigshot5model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/bproof1model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/break1model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/break2model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/break3model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/scorch1model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/scorch2model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/scorchfademodel.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/smscorch1model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/smscorch2model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+            {
+				material = resource:"materials/decals/smscorch3model.vmat"
+				depth = [15.0, 3.0, 0.0]
+				keepaspect = true
+				width = [8.0, 5.0, 0.0]
+				height = [8.0, 5.0, 0.0]
+			},
+		]
+	}
+}

@@ -1,0 +1,43 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		playrandom = 
+		{
+			volume = "0.7,0.85"
+			pitch = "95, 105"
+			time = "5.0, 13.0"
+			position = "random"
+			soundlevel = "SNDLVL75dB"
+			rndwave = 
+			{
+				wave = "sounds/ambient/nature/birds/amb_crow_01.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_02.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_03.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_04.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_05.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_06.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_07.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_08.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_09.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_10.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_11.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_12.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_13.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_14.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_15.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_16.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_17.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_18.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_19.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_20.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_21.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_22.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_23.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_24.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_25.vsnd"
+				wave = "sounds/ambient/nature/birds/amb_crow_26.vsnd"
+			}
+		}
+	}
+}

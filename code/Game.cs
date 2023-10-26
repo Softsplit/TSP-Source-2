@@ -1,5 +1,6 @@
 ﻿using Sandbox;
 using System.Linq;
+using System.Numerics;
 using System.Threading.Tasks;
 
 partial class TheStanleyParable : GameManager
@@ -45,19 +46,18 @@ partial class TheStanleyParable : GameManager
 
         if ( joinCount == 0 )
         {
-            FireMapEntity( Game.LocalPawn, "seriouspass1" );
+            Sound.FromEntity("seriousroom_1", (Entity)ConsoleSystem.Caller.Client.Pawn);
         }
         else if ( joinCount == 1 )
         {
-            FireMapEntity( Game.LocalPawn, "seriouspass2" );
+            Sound.FromEntity("seriousroom_2", (Entity)ConsoleSystem.Caller.Client.Pawn);
         }
         else if ( joinCount == 2 )
         {
-            FireMapEntity( Game.LocalPawn, "seriouspass3" );
+            Sound.FromEntity("seriousroom_3", (Entity)ConsoleSystem.Caller.Client.Pawn);
         }
         else if ( joinCount >= 3 )
         {
-            FireMapEntity( Game.LocalPawn, "seriouspass4" );
         }
 
         IncrementJoinCount();
@@ -84,10 +84,45 @@ partial class TheStanleyParable : GameManager
         FileSystem.Data.WriteJson( path, data );
     }
 
-    private static void FireMapEntity( IEntity activator, string entityName )
+    private void SetRandomMugColors()
     {
-        Entity entity = Entity.FindByName( entityName );
+        System.Random random = new System.Random();
 
-        entity?.FireInput( "Trigger", activator );
+        string[] coffeecup1Colors = new string[]
+        {
+            "208 224 152 1",
+            "186 141 235 1",
+            "147 230 180 1",
+            "232 145 157 1"
+        };
+
+        string[] coffeecup2Colors = new string[]
+        {
+            "147 188 230 1",
+            "228 197 148 1",
+            "232 145 157 1",
+            "232 145 157 1"
+        };
+
+        string[] coffeecup3Colors = new string[]
+        {
+            "232 145 157 1",
+            "140 152 236 1",
+            "236 224 140 1"
+        };
+
+        // Randomly select colors for each mug
+        string randomColor1 = coffeecup1Colors[random.Next(coffeecup1Colors.Length)];
+        string randomColor2 = coffeecup2Colors[random.Next(coffeecup2Colors.Length)];
+        string randomColor3 = coffeecup3Colors[random.Next(coffeecup3Colors.Length)];
+
+        Entity coffeeCup1 = FindByName("coffeecup1");
+        Entity coffeeCup2 = FindByName("coffeecup2");
+        Entity coffeeCup3 = FindByName("coffeecup3");
+
+        // Set the selected colors for the mugs using FireInput
+        coffeeCup1.FireInput("SetColor", Game.LocalPawn, randomColor1);
+        coffeeCup2.FireInput("SetColor", Game.LocalPawn, randomColor2);
+        coffeeCup3.FireInput("SetColor", Game.LocalPawn, randomColor3);
     }
 }

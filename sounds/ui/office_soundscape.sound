@@ -8,5 +8,6 @@
     "sounds/ui/office_soundscape.vsnd"
   ],
   "MaximumDistance": 1143.9335,
-  "MinimumDistance": 57.196674
+  "MinimumDistance": 57.196674,
+  "__references": []
 }

@@ -1,0 +1,33 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		dsp = 1
+		playrandom = 
+		{
+			volume = 1.0
+			pitch = "85, 100"
+			time = "1.0, 7.0"
+			soundlevel = "SNDLVL_70dB"
+			rndwave = 
+			{
+				wave = "sounds/br/ambience/rnd_mv_01.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_02.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_03.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_04.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_05.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_06.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_07.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_08.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_09.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_10.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_11.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_12.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_13.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_14.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_15.vsnd"
+				wave = "sounds/br/ambience/rnd_mv_16.vsnd"
+			}
+		}
+	}
+}

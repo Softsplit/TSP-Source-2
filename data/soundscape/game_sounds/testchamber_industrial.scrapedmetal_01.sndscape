@@ -1,0 +1,69 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:source1imported:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		dsp = 1
+		playrandom = 
+		{
+			volume = "0.7,0.85"
+			pitch = "75, 100"
+			time = "7.0, 12.0"
+			position = "random"
+			soundlevel = "SNDLVL_75dB"
+			rndwave = 
+			{
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_01.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_02.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_03.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_04.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_05.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_07.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_08.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_09.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_10.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_11.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_12.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_13.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_14.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_15.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_16.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_17.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_18.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_19.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_20.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_21.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_22.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_23.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_24.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_25.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_26.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_27.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_28.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_29.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_30.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_31.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_32.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_33.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_34.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_35.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_36.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_37.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_38.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_39.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_40.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_41.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_42.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_43.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_44.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_45.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_46.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_47.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_48.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_49.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_50.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_51.vsnd"
+				wave = "sounds/playonce/ambient/metal/amb_metal_scrape_wronk_52.vsnd"
+			}
+		}
+	}
+}
