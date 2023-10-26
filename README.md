@@ -1,12 +1,9 @@
-![TSPS2 Logo](https://github-production-user-asset-6210df.s3.amazonaws.com/86578963/278288542-30594382-a878-454c-8817-fbada7c94d41.png)
+<p align="center">
+	<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86578963/278288542-30594382-a878-454c-8817-fbada7c94d41.png">
+</p>
+<hr>
 
----
-
-# The Stanley Parable: Source 2 (TSPS2)
-
-[Website](https://asset.party/softsplit/thestanleyparables2)
-
-TSPS2 is an ambitious project powered by s&box, developed by Facepunch, the spiritual successor to Garry's Mod. The project's goal is to recreate the unique experience and mechanics of The Stanley Parable on Source 2, making full use of the engine's updated graphics and capabilities. This project is proudly presented by Softsplit Studios and is open source, inviting both players and developers to explore its inner workings.
+[The Stanley Parable: Source 2](https://asset.party/softsplit/thestanleyparables2) is an ambitious project powered by s&box, developed by Facepunch, the spiritual successor to Garry's Mod. The project's goal is to recreate the unique experience and mechanics of The Stanley Parable on Source 2, making full use of the engine's updated graphics and capabilities. This project is proudly presented by Softsplit Studios and is open source, inviting both players and developers to explore its inner workings.
 
 ## Installation
 
