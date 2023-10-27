@@ -1,0 +1,24 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = true
+		Volume = 0.8
+		VolumeRandom = 0
+		Pitch = 1
+		PitchRandom = 0
+		Decibels = 0
+		Sounds = 
+[
+resource:"sounds/vfx/light_flicker/light_flicker_02.vsnd",
+resource:"sounds/vfx/light_flicker/light_flicker_03.vsnd",
+resource:"sounds/vfx/light_flicker/light_flicker_04.vsnd",
+resource:"sounds/vfx/light_flicker/light_flicker_05.vsnd",
+resource:"sounds/vfx/light_flicker/light_flicker_06.vsnd",
+resource:"sounds/vfx/light_flicker/light_flicker_07.vsnd",
+resource:"sounds/vfx/light_flicker/light_flicker_09.vsnd",
+resource:"sounds/vfx/light_flicker/light_flicker_10.vsnd",
+]
+		SelectionMode = 3
+	}
+}

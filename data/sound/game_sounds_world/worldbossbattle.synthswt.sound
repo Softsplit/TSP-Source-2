@@ -1,0 +1,22 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = true
+		Volume = 0.9
+		VolumeRandom = 0.050000012
+		Pitch = 0.75
+		PitchRandom = 0.100000024
+		Decibels = 0
+		Sounds = 
+[
+resource:"sounds/world/sphere_socket_open_swt_01.vsnd",
+resource:"sounds/world/sphere_socket_lock_swt_01.vsnd",
+resource:"sounds/world/sphere_socket_eject_swt_01.vsnd",
+resource:"sounds/world/sphere_socket_detach_swt_01.vsnd",
+resource:"sounds/world/sphere_socket_close_swt_01.vsnd",
+resource:"sounds/world/sphere_socket_attach_swt_01.vsnd",
+]
+		SelectionMode = 3
+	}
+}

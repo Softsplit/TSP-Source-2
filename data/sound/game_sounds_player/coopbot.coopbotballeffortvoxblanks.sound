@@ -1,0 +1,42 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = false
+		Volume = 0.35
+		VolumeRandom = 0.050000012
+		Pitch = 0.95
+		PitchRandom = 0.099999964
+		Decibels = 75
+		Sounds = 
+[
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_01.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_02.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_04.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_05.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_06.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_07.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_08.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_09.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_10.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_11.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_12.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_13.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_14.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_15.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_16.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_17.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_18.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_19.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_20.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_21.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_22.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_23.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_24.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_25.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_26.vsnd",
+resource:"sounds/player/coop_vox/coop_bot_ball_effort_vox_27.vsnd",
+]
+		SelectionMode = 3
+	}
+}

@@ -1,0 +1,33 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = false
+		Volume = 0.05
+		VolumeRandom = 0.040000003
+		Pitch = 0.95
+		PitchRandom = 0.099999964
+		Decibels = 75
+		Sounds = 
+[
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_01.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_13.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_03.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_05.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_07.vsnd",
+resource:"sounds/player/coop_motors/coop_bot_egg_motor_idle_09.vsnd",
+]
+		SelectionMode = 3
+	}
+}

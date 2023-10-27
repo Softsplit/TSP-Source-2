@@ -1,0 +1,23 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = true
+		Volume = 0.45
+		VolumeRandom = 0.19999999
+		Pitch = 0.8
+		PitchRandom = 0.14999998
+		Decibels = 0
+		Sounds = 
+[
+resource:"sounds/npc/box_monster/box_monster_fs_01.vsnd",
+resource:"sounds/npc/box_monster/box_monster_fs_02.vsnd",
+resource:"sounds/npc/box_monster/box_monster_fs_03.vsnd",
+resource:"sounds/npc/box_monster/box_monster_fs_04.vsnd",
+resource:"sounds/npc/box_monster/box_monster_fs_05.vsnd",
+resource:"sounds/npc/box_monster/box_monster_fs_06.vsnd",
+resource:"sounds/npc/box_monster/box_monster_fs_07.vsnd",
+]
+		SelectionMode = 3
+	}
+}

@@ -1,0 +1,20 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = false
+		Volume = 0.45
+		VolumeRandom = 0
+		Pitch = 0.8
+		PitchRandom = 0.050000012
+		Decibels = 95
+		Sounds = 
+[
+resource:"sounds/world/light_power_off_01.vsnd",
+resource:"sounds/world/light_power_off_02.vsnd",
+resource:"sounds/world/light_power_off_03.vsnd",
+resource:"sounds/world/light_power_off_04.vsnd",
+]
+		SelectionMode = 3
+	}
+}

@@ -1,0 +1,21 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = true
+		Volume = 1
+		VolumeRandom = 0
+		Pitch = 0.95
+		PitchRandom = 0.15000004
+		Decibels = 0
+		Sounds = 
+[
+resource:"sounds/npc/birdbirdbird/birdbirdbird_idle_01.vsnd",
+resource:"sounds/npc/birdbirdbird/birdbirdbird_idle_02.vsnd",
+resource:"sounds/npc/birdbirdbird/birdbirdbird_idle_03.vsnd",
+resource:"sounds/npc/birdbirdbird/birdbirdbird_idle_04.vsnd",
+resource:"sounds/npc/birdbirdbird/birdbirdbird_idle_05.vsnd",
+]
+		SelectionMode = 3
+	}
+}
