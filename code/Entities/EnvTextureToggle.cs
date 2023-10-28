@@ -9,5 +9,18 @@ using Sandbox;
 [Title("Texture Toggle"), Category("Environment"), Icon("toggle_on")]
 public partial class EnvTexturetoggle : Entity
 {
+	[Property]
+	public string Target { get; set; } = "";
 
+	[Input]
+	public void IncrementTextureIndex()
+	{
+	
+	}
+
+    [Input]
+	public void SetTextureIndex( int index )
+	{
+	
+	}
 }

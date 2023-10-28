@@ -1,4 +1,4 @@
-﻿using Sandbox;
+using Sandbox;
 using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
@@ -27,7 +27,13 @@ partial class TheStanleyParable : GameManager
         {
             ConsoleSystem.Run( "tsp_seriousroom" );
         }
-	}
+
+        if (Game.Server.MapIdent == "map")
+        {
+            ConsoleSystem.Run("tsp_map");
+        }
+
+    }
 
 	protected override void OnDestroy()
 	{
@@ -84,7 +90,15 @@ partial class TheStanleyParable : GameManager
         FileSystem.Data.WriteJson( path, data );
     }
 
-    private void SetRandomMugColors()
+    [ConCmd.Server("tsp_map")]
+    public static void MapCmd()
+    {
+        SetRandomMugColors(); 
+
+        
+    }
+
+    private static void SetRandomMugColors()
     {
         System.Random random = new System.Random();
 
@@ -121,8 +135,8 @@ partial class TheStanleyParable : GameManager
         Entity coffeeCup3 = FindByName("coffeecup3");
 
         // Set the selected colors for the mugs using FireInput
-        coffeeCup1.FireInput("SetColor", Game.LocalPawn, randomColor1);
-        coffeeCup2.FireInput("SetColor", Game.LocalPawn, randomColor2);
-        coffeeCup3.FireInput("SetColor", Game.LocalPawn, randomColor3);
+        coffeeCup1.FireInput("SetColor", (Entity)ConsoleSystem.Caller.Client.Pawn, randomColor1);
+        coffeeCup2.FireInput("SetColor", (Entity)ConsoleSystem.Caller.Client.Pawn, randomColor2);
+        coffeeCup3.FireInput("SetColor", (Entity)ConsoleSystem.Caller.Client.Pawn, randomColor3);
     }
 }
