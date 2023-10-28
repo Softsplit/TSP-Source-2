@@ -5,6 +5,8 @@ using Editor;
 using Sandbox;
 using Sandbox.Internal;
 
+// borrowed from https://asset.party/alex/world_portals, i was desperate :(
+
 /// <summary>
 /// A door which is linked by a portal to another 'linked_portal_door' entity.
 /// </summary>
