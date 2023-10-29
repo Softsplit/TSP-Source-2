@@ -5,7 +5,8 @@ using Editor;
 using Sandbox;
 using Sandbox.Internal;
 
-// this is a reconstructed and modified version of https://asset.party/alex/world_portals with inputs and outputs, i was desperate :(
+// This is a reconstructed and modified version of https://asset.party/alex/world_portals with inputs and outputs,
+// which itself is also borrowed from https://youtu.be/cWpFZbjtSQg?si=05_qrpo9v1GMSpdV. Borrowception!
 
 /// <summary>
 /// A door which is linked by a portal to another 'linked_portal_door' entity.
