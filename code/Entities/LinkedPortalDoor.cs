@@ -182,6 +182,7 @@ public partial class LinkedPortalDoor : RenderEntity
         obj.RenderLayer = SceneRenderLayer.Default;
     }
 
+    /*
     [GameEvent.Client.Frame]
     public static void RenderAllPortals()
     {
@@ -197,6 +198,7 @@ public partial class LinkedPortalDoor : RenderEntity
             portal.StartActive = 0;
         }
     }
+    */
 
     private void RenderScene(RenderTarget renderTarget)
 	{
