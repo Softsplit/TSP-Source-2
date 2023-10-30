@@ -42,7 +42,7 @@ public partial class LinkedPortalDoor : RenderEntity
     /// Whether to start the linkage as active from the start.
     /// </summary>
     [Property(Title = "Start Active")]
-    public static bool StartActive { get; set; } = false;
+    public int StartActive { get; set; }
 
     /// <summary>
     /// Another 'prop_linked_portal_door' entity which will link to this one.
@@ -97,9 +97,9 @@ public partial class LinkedPortalDoor : RenderEntity
     [Input]
     public void Open()
     {
-        if (StartActive != true)
+        if (StartActive != 1)
         {
-            StartActive = true;
+            StartActive = 1;
         }
 
         OnOpen.Fire(this);
@@ -111,9 +111,9 @@ public partial class LinkedPortalDoor : RenderEntity
     [Input]
     public void Close()
     {
-        if (StartActive != false)
+        if (StartActive != 0)
         {
-            StartActive = false;
+            StartActive = 0;
         }
 
         OnClose.Fire(this);
@@ -121,7 +121,7 @@ public partial class LinkedPortalDoor : RenderEntity
 
     public override void Spawn()
     {        
-        base.Transmit = TransmitType.Always;
+        Transmit = TransmitType.Always;
     }
 
     [GameEvent.Tick]
@@ -134,7 +134,7 @@ public partial class LinkedPortalDoor : RenderEntity
             return;
         }
 
-        foreach (Entity entity in Entity.FindInBox(WorldBBox))
+        foreach (Entity entity in FindInBox(WorldBBox))
         {           
             RenderBounds = new BBox(LocalBBox.Mins * Rotation, LocalBBox.Maxs * Rotation);
             
@@ -147,7 +147,7 @@ public partial class LinkedPortalDoor : RenderEntity
                     break;
                 }
 
-                Transform entityLocal = base.Transform.ToLocal(entity.Transform);
+                Transform entityLocal = Transform.ToLocal(entity.Transform);
                 
                 entity.Position = Partner.Transform.PointToWorld(entityLocal.Position);                
                 entity.Position += Vector3.Up;               
@@ -186,15 +186,15 @@ public partial class LinkedPortalDoor : RenderEntity
     public static void RenderAllPortals()
     {
         foreach (LinkedPortalDoor portal in Entity.All.OfType<LinkedPortalDoor>())
-        {           
-            StartActive = true;
-            
-            portal.colorTarget = Texture.CreateRenderTarget("LinkedPortalDoorTexture:Color", ImageFormat.RGB565, Screen.Size * RenderScale, portal.colorTarget);           
-            portal.depthTarget = Texture.CreateRenderTarget("LinkedPortalDoorTexture:Depth", ImageFormat.D24S8, Screen.Size * RenderScale, portal.depthTarget);    
-            
+        {
+            portal.StartActive = 1;
+
+            portal.colorTarget = Texture.CreateRenderTarget("LinkedPortalDoorTexture:Color", ImageFormat.RGB565, Screen.Size * RenderScale, portal.colorTarget);
+            portal.depthTarget = Texture.CreateRenderTarget("LinkedPortalDoorTexture:Depth", ImageFormat.D24S8, Screen.Size * RenderScale, portal.depthTarget);
+
             portal.RenderScene(RenderTarget.From(portal.colorTarget, portal.depthTarget));
-            
-            StartActive = false;
+
+            portal.StartActive = 0;
         }
     }
 
@@ -204,7 +204,7 @@ public partial class LinkedPortalDoor : RenderEntity
 		if (Game.IsClient && Partner.IsValid())
 		{
 			Transform cameraTransform = new Transform(Camera.Position, Camera.Rotation);
-			Transform localCamera = base.Transform.ToLocal(cameraTransform);
+			Transform localCamera = Transform.ToLocal(cameraTransform);
 			Transform endCamera = Partner.Transform.ToWorld(localCamera);
 
 			renderCamera = new SceneCamera("LinkedPortalDoorCamera");
@@ -243,7 +243,7 @@ public partial class LinkedPortalDoor : RenderEntity
 
     public override void DoRender(SceneObject obj)
 	{
-		if (!StartActive)
+		if (StartActive == 0)
 		{
 			_ = (Position - Partner.Position).Normal;
 			

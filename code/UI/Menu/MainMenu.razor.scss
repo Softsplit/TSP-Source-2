@@ -53,17 +53,18 @@ MainMenu {
     .wrapper {
         flex-direction: column;
         justify-content: left;
-        width: 1000px;
+        width: 1500px;
         height: 900px;
         padding-left: 50px;
     }
 
     .game-title {
         flex-direction: column;
-        gap: 0px;
+        gap: -10px;
         align-items: flex-start;
-        padding-bottom: 250px;
-        height: 425px;
+        margin-bottom: -250px;
+        height: 725px;
+        width: 1000px;
     }
 
     OptionsPage .game-title {
@@ -171,6 +172,14 @@ MainMenu {
 
 .game-title2 {
     font-size: 140px;
+    width: 2000px;
+    color: rgba(white, 1);
+}
+
+.game-title3 {
+    margin-top: -25px;
+    font-size: 140px;
+    width: 2000px;
     color: rgba(white, 1);
 }
 
