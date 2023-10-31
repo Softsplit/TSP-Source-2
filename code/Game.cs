@@ -23,12 +23,12 @@ partial class TheStanleyParable : GameManager
 
 		player.Respawn();
 
-		if ( Game.Server.MapIdent == "softsplit.seriousroom" )
+		if ( Game.Server.MapIdent == "softsplit.tsp_seriousroom" )
         {
             ConsoleSystem.Run( "tsp_seriousroom" );
         }
 
-        if (Game.Server.MapIdent == "map")
+        if (Game.Server.MapIdent == "softsplit.tsp_map")
         {
             ConsoleSystem.Run("tsp_map");
         }
