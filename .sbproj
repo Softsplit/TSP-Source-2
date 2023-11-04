@@ -302,7 +302,7 @@
       {
         "Name": "Begin The Game",
         "GameIdent": "softsplit.thestanleyparables2#local",
-        "MapName": "softsplit.seriousroom",
+        "MapName": "softsplit.tsp_seriousroom",
         "MaxPlayers": 1,
         "GameSettings": {},
         "Addons": "",
