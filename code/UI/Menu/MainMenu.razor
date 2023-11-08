@@ -1,36 +1,59 @@
-@using System;
+@using System
 @using Sandbox;
+@using Sandbox.MenuSystem;
 @using Sandbox.UI;
+@using Sandbox.Menu;
 
-@inherits Sandbox.UI.NavHostPanel
-@implements Sandbox.Menu.IGameMenuPanel
 @attribute [StyleSheet]
+@namespace TSPS2.Menu
+@implements IGameMenuPanel
+@inherits NavHostPanel
 
-<root style="flex-direction: column;">
-    <div class="background" />
-    <div class="navigator-canvas" slot="navigator-canvas" />
+<root class="tsps2menu">
+
 </root>
 
 @code
 {
+    public static MainMenu Current { get; private set; }
+    SoundHandle MenuAmbience;
+
     public MainMenu()
     {
+        Current = this;
         DefaultUrl = "/";
 
-        AddDestination( "/", typeof( FrontPage ) );
-        AddDestination( "/options", typeof( OptionsPage ) );
+        AddDestination("/", typeof(MainPage));
+        AddDestination("/settings", typeof(SettingsMenu));
+        AddDestination("/credits", typeof(CreditsMenu));
 
-        BindClass( "ingame", () => Game.InGame );
+        if (Game.InGame) Navigate("/");
+
+        BindClass("ingame", () => Game.InGame);
     }
 
-    [GameEvent.Menu.ServerJoined]
-    public void OnServerJoined() => Navigate( "/" );
+    public override void Tick()
+    {
+        base.Tick();
+        UpdateAmbience();
+    }
+
+    void UpdateAmbience()
+    {
+        if (Game.InGame || Game.Menu.IsLoading)
+        {
+            MenuAmbience.Stop(true);
+            return;
+        }
+        if (!MenuAmbience.IsPlaying)
+        {
+            MenuAmbience = Audio.Play("office_soundscape");
+        }
+    }
 
     [GameEvent.Menu.ServerLeave]
-    public void OnServerLeave() => Navigate ("/" );
-
-    protected override int BuildHash()
+    public void OnServerLeave()
     {
-        return HashCode.Combine( Game.InGame, Game.Menu.Lobby, Game.Menu.Lobby?.Map );
+        Navigate("/");
     }
 }

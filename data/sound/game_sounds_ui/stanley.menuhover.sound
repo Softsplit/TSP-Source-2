@@ -1,25 +1,21 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
-	data = 
-	{
-		UI = false
-		Volume = 1
-		VolumeRandom = 0
-		Pitch = 1
-		PitchRandom = 0
-		Decibels = 75
-		Sounds = 
-[
-resource:"sounds/gameui/UI_Menu_Hover_01.vsnd",
-resource:"sounds/gameui/UI_Menu_Hover_02.vsnd",
-resource:"sounds/gameui/UI_Menu_Hover_03.vsnd",
-resource:"sounds/gameui/UI_Menu_Hover_04.vsnd",
-resource:"sounds/gameui/UI_Menu_Hover_05.vsnd",
-resource:"sounds/gameui/UI_Menu_Hover_06.vsnd",
-resource:"sounds/gameui/UI_Menu_Hover_07.vsnd",
-resource:"sounds/gameui/UI_Menu_Hover_08.vsnd",
-resource:"sounds/gameui/UI_Menu_Hover_09.vsnd",
-]
-		SelectionMode = 3
-	}
+  "UI": false,
+  "Volume": "1.00,1.00,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 75,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/gameui/ui_menu_hover_01.vsnd",
+    "sounds/gameui/ui_menu_hover_02.vsnd",
+    "sounds/gameui/ui_menu_hover_03.vsnd",
+    "sounds/gameui/ui_menu_hover_04.vsnd",
+    "sounds/gameui/ui_menu_hover_05.vsnd",
+    "sounds/gameui/ui_menu_hover_06.vsnd",
+    "sounds/gameui/ui_menu_hover_07.vsnd",
+    "sounds/gameui/ui_menu_hover_08.vsnd",
+    "sounds/gameui/ui_menu_hover_09.vsnd"
+  ],
+  "MaximumDistance": 1308.4543,
+  "MinimumDistance": 65.42272,
+  "__references": []
 }

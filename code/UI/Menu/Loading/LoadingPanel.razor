@@ -1,0 +1,37 @@
+@using System;
+@using System.Linq;
+@using Sandbox;
+@using Sandbox.UI;
+@using Sandbox.Menu;
+@attribute [StyleSheet]
+@namespace TSPS2.Menu
+@implements Sandbox.Menu.ILoadingScreenPanel
+
+<root class="loadingpanel">
+    <div class="container">
+        <div class="theendis">THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE
+            END IS</div>
+        <div class="subcontainer">
+            LOADING
+            <div class="progress">
+                @if (Progress.Fraction > 0)
+                {
+                    <div class="bar" style="width: @(Progress.Percent)%;"></div>
+                }
+            </div>
+
+        </div>
+        <div class="never">NEVER</div>
+    </div>
+</root>
+
+@code
+{
+    public LoadingProgress Progress;
+
+    public void OnLoadingProgress(LoadingProgress progress)
+    {
+        Progress = progress;
+        StateHasChanged();
+    }
+}

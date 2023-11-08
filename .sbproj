@@ -7,7 +7,7 @@
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
-  "Resources": "*",
+  "Resources": "/sounds/*\n/fonts/*\n/shaders/*\n/UI/*",
   "MenuResources": "/UI/Menu/*\n/sounds/ui/*\n/fonts/*\ndata/sound/game_sounds_ui/*\nsounds/gameui/*",
   "HasCode": true,
   "CodePath": "code",
@@ -253,45 +253,47 @@
         {
           "Name": "Forward",
           "KeyboardCode": "W",
-          "GroupName": "Movement"
+          "GroupName": ""
         },
         {
           "Name": "Backward",
           "KeyboardCode": "S",
-          "GroupName": "Movement"
+          "GroupName": ""
         },
         {
           "Name": "Left",
           "KeyboardCode": "A",
-          "GroupName": "Movement"
+          "GroupName": ""
         },
         {
           "Name": "Right",
           "KeyboardCode": "D",
-          "GroupName": "Movement"
+          "GroupName": ""
         },
         {
-          "Name": "Walk",
-          "KeyboardCode": "alt",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "Duck",
-          "KeyboardCode": "ctrl",
-          "GamepadCode": "B",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "Attack1",
-          "KeyboardCode": "mouse1",
-          "GamepadCode": "RightTrigger",
-          "GroupName": "Combat"
+          "Name": "Jump",
+          "KeyboardCode": "SPACE",
+          "GroupName": ""
         },
         {
           "Name": "Use",
           "KeyboardCode": "e",
-          "GamepadCode": "Y",
-          "GroupName": "Combat"
+          "GroupName": ""
+        },
+        {
+          "Name": "Attack1",
+          "KeyboardCode": "MOUSE1",
+          "GroupName": ""
+        },
+        {
+          "Name": "Duck",
+          "KeyboardCode": "CTRL",
+          "GroupName": ""
+        },
+        {
+          "Name": "Auto-Walk",
+          "KeyboardCode": "MOUSE2",
+          "GroupName": ""
         }
       ]
     },
@@ -309,6 +311,9 @@
         "PreLaunchCommand": "sv_password password",
         "PostLaunchCommand": ""
       }
-    ]
+    ],
+    "SavedGames": false,
+    "MapDependentSaves": false,
+    "SaveFormatVersion": 1001
   }
 }
