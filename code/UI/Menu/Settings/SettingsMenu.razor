@@ -25,7 +25,6 @@
         Client
     }
 
-    public ObjectEditor Editor;
     SettingsPage Mode;
     bool needsRefresh = true;
 
@@ -34,35 +33,8 @@
         BindClass("ingame", () => Game.InGame);
     }
 
-    protected override void OnAfterTreeRender(bool firstTime)
-    {
-        if ( Editor != null && needsRefresh )
-        {
-            needsRefresh = false;
-        }
-    }
-
-    public void SetDefaults()
-    {
-        Game.Menu.InputSettings.InitDefault();
-        TSPClientSettings.Reset();
-
-        if(Editor != null)
-            Editor.Target = TSPClientSettings.Current;
-    }
-
     public void OnClickBack()
     {
         this.Navigate("/");
-    }
-
-    protected override void OnEvent( PanelEvent e )
-    {
-        base.OnEvent( e );
-
-        if ( e.Name == "save" )
-        {
-            TSPClientSettings.Current.Save();
-        }
     }
 }
