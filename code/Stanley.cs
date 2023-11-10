@@ -4,12 +4,8 @@ using System.Numerics;
 partial class Stanley : Player
 {
 	private TimeSince timeSinceDropped;
-	private TimeSince timeSinceJumpReleased;
 
 	private DamageInfo lastDamage;
-
-	[Net, Predicted]
-	public bool ThirdPersonCamera { get; set; }
 
 	/// <summary>
 	/// The clothing container is what dresses the citizen
@@ -116,10 +112,6 @@ partial class Stanley : Player
 		TickPlayerUse();
 		SimulateActiveChild( cl, ActiveChild );
 
-		if ( Input.Released( "Jump" ) )
-		{
-		}
-
 		if ( Input.Pressed( "Attack1" ) )
 		{
 			Input.SetAction( "Use" , true );
@@ -215,29 +207,7 @@ partial class Stanley : Player
 		Camera.Rotation = ViewAngles.ToRotation();
 		Camera.FieldOfView = Screen.CreateVerticalFieldOfView( Game.Preferences.FieldOfView );
 
-		if ( ThirdPersonCamera )
-		{
-			Camera.FirstPersonViewer = null;
-
-			Vector3 targetPos;
-			var center = Position + Vector3.Up * 64;
-
-			var pos = center;
-			var rot = Camera.Rotation * Rotation.FromAxis( Vector3.Up, -16 );
-
-			float distance = 130.0f * Scale;
-			targetPos = pos + rot.Right * ((CollisionBounds.Mins.x + 32) * Scale);
-			targetPos += rot.Forward * -distance;
-
-			var tr = Trace.Ray( pos, targetPos )
-				.WithAnyTags( "solid" )
-				.Ignore( this )
-				.Radius( 8 )
-				.Run();
-
-			Camera.Position = tr.EndPosition;
-		}
-		else if ( LifeState != LifeState.Alive && Corpse.IsValid() )
+		if ( LifeState != LifeState.Alive && Corpse.IsValid() )
 		{
 			Corpse.EnableDrawing = true;
 
