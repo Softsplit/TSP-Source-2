@@ -27,7 +27,7 @@ MainPage {
     .menublock-container1 {
         position: absolute;
         bottom: 0;
-        margin-bottom: 100px;
+        margin-bottom: 85px;
         flex-direction: column;
 
         .menublock1 {
@@ -147,7 +147,7 @@ MainPage {
     .menublock-container2 {
         position: absolute;
         bottom: 0;
-        margin-bottom: 84px;
+        margin-bottom: 67.5px;
         flex-direction: column;
 
         .menublock3 {
@@ -261,5 +261,16 @@ MainPage {
                 }
             }
         }
+    }
+
+    .version-container {
+        position: absolute;
+        font-family: HKNova-Narrow;
+        right: 0;
+        bottom: 0;
+        font-size: 19.95px;
+        margin-bottom: 12px;
+        margin-right: 10px;
+        color: gray;
     }
 }

@@ -15,11 +15,12 @@ CreditsMenu {
 
 .container {
     left: 120px;
-    margin-top: 117.5px;
     height: 740px;
     width: 887.5px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     font-family: LeagueGothic;
     font-style: italic;
     flex-direction: column;
@@ -185,7 +186,7 @@ CreditsMenu {
     font-family: LeagueGothic;
     font-size: 68px;
     bottom: 0;
-    margin-bottom: 85px;
+    margin-bottom: 60px;
     margin-left: 60px;
 
     &:hover {
