@@ -8,11 +8,6 @@ partial class Stanley : Player
 	private DamageInfo lastDamage;
 
 	/// <summary>
-	/// The clothing container is what dresses the citizen
-	/// </summary>
-	public ClothingContainer Clothing = new();
-
-	/// <summary>
 	/// Default init
 	/// </summary>
 	public Stanley()
@@ -24,8 +19,6 @@ partial class Stanley : Player
 	/// </summary>
 	public Stanley( IClient cl ) : this()
 	{
-		// Load clothing from client data
-		Clothing.LoadFromClient( cl );
 	}
 
 	public override void Respawn()
@@ -45,11 +38,9 @@ partial class Stanley : Player
 
 		this.ClearWaterLevel();
 		EnableAllCollisions = true;
-		EnableDrawing = true;
+		EnableDrawing = false;
 		EnableHideInFirstPerson = true;
 		EnableShadowInFirstPerson = false;
-
-		Clothing.DressEntity( this );
 
 		base.Respawn();
 	}
