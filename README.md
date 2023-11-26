@@ -3,15 +3,15 @@
 </p>
 <hr>
 
-[The Stanley Parable: Source 2](https://asset.party/softsplit/thestanleyparables2) is an ambitious project powered by s&box, developed by Facepunch Studios. The project's goal is to recreate the unique experience and mechanics of The Stanley Parable on Source 2, making full use of the engine's updated graphics and capabilities. This project is proudly presented by Softsplit Studios and is open source, inviting both players and developers to explore its inner workings.
+[The Stanley Parable: Source 2](https://asset.party/softsplit/thestanleyparables2) is an ambitious project powered by S&box, developed by Facepunch Studios. The project's goal is to recreate the unique experience and mechanics of The Stanley Parable on Source 2, making full use of the engine's updated graphics and capabilities. This project is proudly presented by Softsplit Studios and is open source, inviting both players and developers to explore its inner workings.
 
 ## Installation
 
-This section provides guidance for developers on how to install and set up the TSPS2 addon for local development. For regular users and players, it is recommended to use s&box's in-game addon browser to play the gamemode.
+This section provides guidance for developers on how to install and set up the TSPS2 addon for local development. For regular users and players, it is recommended to use S&box's in-game addon browser to play the gamemode.
 
-- Navigate to your s&box installation directory. On Windows, this would typically be located at `Steam/steamapps/common/sbox/`.
+- Navigate to your S&box installation directory. On Windows, this would typically be located at `Steam/steamapps/common/sbox/`.
 - Inside the `addons` folder, clone the repository.
-- Run the developer version of s&box (sbox-dev.exe). Once loaded, add the addon using the Project context menu (Project -> Add Existing From Disk). Confirm that it's active and enabled by hovering over the checkmark icon.
+- Run the developer version of S&box (sbox-dev.exe). Once loaded, add the addon using the Project context menu (Project -> Add Existing From Disk). Confirm that it's active and enabled by hovering over the checkmark icon.
 
 Congratulations! Your local version of TSPS2 is now ready for both playing and modification. If you encounter any issues during installation or setup, feel free to reach out to us on our [Discord](https://discord.gg/GaGFHFttAC).
 
