@@ -7,313 +7,69 @@
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
-  "Resources": "/sounds/*\n/fonts/*\n/shaders/*\n/UI/*",
-  "MenuResources": "/UI/*\n/sounds/ui/*\n/fonts/*\ndata/sound/game_sounds_ui/*\nsounds/gameui/*",
+  "Resources": null,
+  "MenuResources": "*",
   "HasCode": true,
-  "CodePath": "code",
+  "CodePath": "/code/",
   "PackageReferences": [],
   "EditorReferences": null,
   "Metadata": {
-    "MapList": [],
-    "MinPlayers": 1,
     "MaxPlayers": 1,
-    "MapSelect": "Tagged",
+    "MinPlayers": 1,
+    "TickRate": 50,
+    "GameNetworkType": "Singleplayer",
+    "MapSelect": "Unrestricted",
+    "MapList": [],
+    "RankType": "None",
     "PerMapRanking": false,
     "LeaderboardType": "None",
-    "RankType": "None",
-    "GameNetworkType": "Singleplayer",
-    "Collision": {
-      "Defaults": {
-        "solid": "Collide",
-        "trigger": "Trigger",
-        "ladder": "Ignore",
-        "water": "Trigger",
-        "player": "Unset",
-        "weapon": "Unset",
-        "projectile": "Unset",
-        "debris": "Unset",
-        "interactable": "Unset",
-        "playerclip": "Unset",
-        "sky": "Unset"
-      },
-      "Pairs": [
-        {
-          "a": "solid",
-          "b": "solid",
-          "r": "Collide"
-        },
-        {
-          "a": "trigger",
-          "b": "playerclip",
-          "r": "Ignore"
-        },
-        {
-          "a": "solid",
-          "b": "trigger",
-          "r": "Trigger"
-        },
-        {
-          "a": "playerclip",
-          "b": "solid",
-          "r": "Collide"
-        },
-        {
-          "a": "trigger",
-          "b": "player",
-          "r": "Trigger"
-        },
-        {
-          "a": "ladder",
-          "b": "player"
-        },
-        {
-          "a": "player",
-          "b": "player"
-        },
-        {
-          "a": "solid",
-          "b": "player"
-        },
-        {
-          "a": "debris",
-          "b": "interactable",
-          "r": "Ignore"
-        },
-        {
-          "a": "player",
-          "b": "weapon",
-          "r": "Ignore"
-        },
-        {
-          "a": "player",
-          "b": "projectile",
-          "r": "Ignore"
-        },
-        {
-          "a": "debris",
-          "b": "debris",
-          "r": "Collide"
-        },
-        {
-          "a": "player",
-          "b": "interactable",
-          "r": "Trigger"
-        },
-        {
-          "a": "trigger",
-          "b": "trigger"
-        },
-        {
-          "a": "solid",
-          "b": "interactable",
-          "r": "Collide"
-        },
-        {
-          "a": "solid",
-          "b": "debris",
-          "r": "Collide"
-        },
-        {
-          "a": "trigger",
-          "b": "interactable",
-          "r": "Ignore"
-        },
-        {
-          "a": "trigger",
-          "b": "debris",
-          "r": "Ignore"
-        },
-        {
-          "a": "ladder",
-          "b": "interactable",
-          "r": "Collide"
-        },
-        {
-          "a": "ladder",
-          "b": "debris",
-          "r": "Collide"
-        },
-        {
-          "a": "water",
-          "b": "debris",
-          "r": "Collide"
-        },
-        {
-          "a": "water",
-          "b": "interactable",
-          "r": "Collide"
-        },
-        {
-          "a": "player",
-          "b": "debris",
-          "r": "Ignore"
-        },
-        {
-          "a": "weapon",
-          "b": "debris",
-          "r": "Ignore"
-        },
-        {
-          "a": "projectile",
-          "b": "debris",
-          "r": "Ignore"
-        },
-        {
-          "a": "interactable",
-          "b": "interactable",
-          "r": "Ignore"
-        },
-        {
-          "a": "projectile",
-          "b": "interactable",
-          "r": "Ignore"
-        },
-        {
-          "a": "weapon",
-          "b": "interactable",
-          "r": "Ignore"
-        },
-        {
-          "a": "projectile",
-          "b": "projectile",
-          "r": "Ignore"
-        },
-        {
-          "a": "weapon",
-          "b": "weapon"
-        },
-        {
-          "a": "trigger",
-          "b": "projectile"
-        },
-        {
-          "a": "projectile",
-          "b": "playerclip",
-          "r": "Ignore"
-        },
-        {
-          "a": "ladder",
-          "b": "playerclip",
-          "r": "Collide"
-        },
-        {
-          "a": "water",
-          "b": "playerclip",
-          "r": "Collide"
-        },
-        {
-          "a": "player",
-          "b": "playerclip"
-        },
-        {
-          "a": "projectile",
-          "b": "sky",
-          "r": "Ignore"
-        },
-        {
-          "a": "trigger",
-          "b": "sky",
-          "r": "Ignore"
-        },
-        {
-          "a": "solid",
-          "b": "sky",
-          "r": "Collide"
-        },
-        {
-          "a": "ladder",
-          "b": "sky",
-          "r": "Collide"
-        },
-        {
-          "a": "water",
-          "b": "sky",
-          "r": "Collide"
-        }
-      ]
-    },
-    "Compiler": {
-      "RootNamespace": "THESTANLEYPARABLE",
-      "DefineConstants": "SANDBOX;ADDON;DEBUG",
-      "NoWarn": "1701;1702;1591;"
-    },
-    "GameCategory": "Shooter",
-    "GameSettings": {},
-    "ControlModes": {
-      "Keyboard": true
-    },
-    "ParentPackage": "",
-    "DefaultLeaderboards": null,
-    "Summary": "Welcome to The Stanley Parable: Source 2\nBugs are to be expected and essential features may be missing",
-    "Description": "",
-    "Public": true,
     "CsProjName": "",
+    "StartupScene": "scenes/game.scene",
+    "ProjectTemplate": null,
+    "ControlModes": {},
     "InputSettings": {
       "Actions": [
         {
           "Name": "Forward",
           "KeyboardCode": "W",
-          "GroupName": ""
+          "GroupName": "Movement"
         },
         {
           "Name": "Backward",
           "KeyboardCode": "S",
-          "GroupName": ""
+          "GroupName": "Movement"
         },
         {
           "Name": "Left",
           "KeyboardCode": "A",
-          "GroupName": ""
+          "GroupName": "Movement"
         },
         {
           "Name": "Right",
           "KeyboardCode": "D",
-          "GroupName": ""
+          "GroupName": "Movement"
         },
         {
-          "Name": "Jump",
-          "KeyboardCode": "SPACE",
-          "GroupName": ""
+          "Name": "Duck",
+          "KeyboardCode": "ctrl",
+          "GamepadCode": "B",
+          "GroupName": "Movement"
         },
         {
           "Name": "Use",
           "KeyboardCode": "e",
-          "GroupName": ""
-        },
-        {
-          "Name": "Attack1",
-          "KeyboardCode": "MOUSE1",
-          "GroupName": ""
-        },
-        {
-          "Name": "Duck",
-          "KeyboardCode": "CTRL",
-          "GroupName": ""
-        },
-        {
-          "Name": "Auto-Walk",
-          "KeyboardCode": "MOUSE2",
-          "GroupName": ""
+          "GroupName": "Other"
         }
       ]
     },
-    "ReplaceTags": "thestanleyparable remake walking-simulator",
-    "HttpAllowList": null,
-    "TickRate": 50,
-    "LaunchConfigs": [
-      {
-        "Name": "Begin The Game",
-        "GameIdent": "softsplit.thestanleyparables2#local",
-        "MapName": "softsplit.tsp_seriousroom",
-        "MaxPlayers": 1,
-        "GameSettings": {},
-        "Addons": "",
-        "PreLaunchCommand": "sv_password password",
-        "PostLaunchCommand": ""
-      }
-    ],
-    "SavedGames": false,
-    "MapDependentSaves": false,
-    "SaveFormatVersion": 1001
+    "Compiler": {
+      "RootNamespace": "Parable",
+      "DefineConstants": "SANDBOX;ADDON;DEBUG",
+      "NoWarn": "1701;1702;1591;",
+      "WarningsAsErrors": "",
+      "AssemblyReferences": [],
+      "IgnoreFolders": [],
+      "DistinctAssemblyReferences": []
+    }
   }
 }

@@ -1,0 +1,74 @@
+{
+  "RootObject": {
+    "Id": "2ace5377-1532-4d35-a959-6fcf8b224115",
+    "Name": "stanley",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Player",
+        "__enabled": true,
+        "Body": "557060ca-0703-4d35-948a-08bdc36f95ae",
+        "Controller": "2ace5377-1532-4d35-a959-6fcf8b224115",
+        "Eyes": "3fb368fe-fcd8-46d1-9f33-b40b66d88a4d",
+        "Gravity": "0,0,800",
+        "Speed": 175
+      },
+      {
+        "__type": "CharacterController",
+        "__enabled": true,
+        "Acceleration": 10,
+        "GroundAngle": 45,
+        "Height": 72,
+        "IgnoreLayers": "",
+        "Radius": 16,
+        "StepHeight": 18
+      }
+    ],
+    "Children": [
+      {
+        "Id": "557060ca-0703-4d35-948a-08bdc36f95ae",
+        "Name": "body",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SkinnedModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": null,
+            "CreateBoneObjects": false,
+            "MaterialOverride": null,
+            "Model": "models/citizen/citizen.vmdl",
+            "ShouldCastShadows": true,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "Id": "3fb368fe-fcd8-46d1-9f33-b40b66d88a4d",
+        "Name": "eyes",
+        "Position": "0,0,64",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "CameraComponent",
+            "__enabled": true,
+            "BackgroundColor": "0.33333,0.46275,0.52157,1",
+            "ClearFlags": "All",
+            "FieldOfView": 75,
+            "Orthographic": false,
+            "OrthographicHeight": 1204,
+            "RenderExcludeTags": "",
+            "RenderTags": "",
+            "TargetEye": "None",
+            "ZFar": 10000,
+            "ZNear": 10
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

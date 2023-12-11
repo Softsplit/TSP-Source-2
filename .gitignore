@@ -1,49 +1,18 @@
-*.*_c
-!*.shader_c
 
-*.cache
-*.json
+# This file describes files and paths that should not be tracked by Git version control
+# https://git-scm.com/docs/gitignore
 
-/*.bin
-
-code/accesslist.txt
-code/Properties
-code/obj
+# Auto-generated code editor files
+.vs/*
+.vscode/*
 *.csproj
-*.csproj.user
-*.sln
-.vs
-.intermediate
+obj/*
+Properties/*
+code/obj/*
+code/Properties/*
 
-_bakeresourcecache
-maps/*.los
-
-# Source 1 Content
-
-*.vtf
-*.vmt
-*.qc
-*.dx80.vtx
-*.dx90.vtx
-*.sw.vtx
-*.vvd
-*.mdl
-*.phy
-*.ani
-
-lighting/
-elements/sessions/*
-
+# Auto-generated asset related files
+*.generated.*
+*.*_c
+*.los
 *.vpk
-*.vmap.meta
-
-*.blend1
-
-dev/*
-*.fgd
-
-scenes/*
-expressions/*
-
-*.generated.vtex_c
-*.vtex_c

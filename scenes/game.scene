@@ -1,0 +1,168 @@
+{
+  "GameObjects": [
+    {
+      "Id": "9d3d400c-47e5-445c-8345-1b8f2f897996",
+      "Name": "player",
+      "Enabled": true,
+      "__Prefab": "scenes/player.object"
+    },
+    {
+      "Id": "8c1bd199-1b4d-4a96-9279-850d3747130c",
+      "Name": "floor",
+      "Scale": "4,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Scale": "100,100,0.01",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "b1faaa54-634d-4587-8ca5-03475760327a",
+      "Name": "lighting",
+      "Rotation": "0,0.6087617,0,0.7933531",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DirectionalLight",
+          "__enabled": true,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    },
+    {
+      "Id": "fae3d758-6959-45f3-890c-97aa8285407e",
+      "Name": "doorframe_left",
+      "Position": "200,68,1.020001",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": null,
+          "Model": "models/props_downtown/metal_door_112_16_frame.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/props_downtown/metal_door_112_16_frame.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ],
+      "Children": [
+        {
+          "Id": "8a466fca-99b0-491e-b795-3c2f501f5a87",
+          "Name": "metal_door_112",
+          "Position": "0.00002892523,56,0",
+          "Rotation": "0.5,-0.5000003,-0.5,0.4999996",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/props_downtown/metal_door_112.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props_downtown/metal_door_112.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "442c3e00-81e0-400a-8c0f-a1412db6c434",
+      "Name": "doorright_frame",
+      "Position": "200,-124,0",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": null,
+          "Model": "models/props_downtown/metal_door_112_16_frame.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/props_downtown/metal_door_112_16_frame.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ],
+      "Children": [
+        {
+          "Id": "8858cb25-2dcc-4602-98b4-2cc5fa3cd2cc",
+          "Name": "metal_door_112",
+          "Position": "0,0,0",
+          "Rotation": "0.5,0.5000003,0.5,0.4999996",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/props_downtown/metal_door_112.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props_downtown/metal_door_112.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "Lerping": true,
+    "UseFixedUpdate": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "MaxFixedUpdates": 5,
+    "FixedUpdateFrequency": 50,
+    "NetworkFrequency": 60
+  },
+  "Title": "game",
+  "Description": "",
+  "__references": []
+}
