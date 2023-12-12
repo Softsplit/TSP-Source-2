@@ -1,14 +1,14 @@
 {
-  "Title": "The Stanley Parable: Source 2",
+  "Title": "The Stanley Parable: Source 2 - Scenes Branch",
   "Type": "game",
   "Org": "softsplit",
   "Ident": "thestanleyparables2",
-  "Tags": "remake thestanleyparable walking-simulator",
+  "Tags": "remake thestanleyparable",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
-  "Resources": null,
-  "MenuResources": "*",
+  "Resources": "/sounds/*\n/fonts/*\n/shaders/*\n/UI/*",
+  "MenuResources": "/UI/*\n/sounds/ui/*\n/fonts/*\ndata/sound/game_sounds_ui/*\nsounds/gameui/*",
   "HasCode": true,
   "CodePath": "/code/",
   "PackageReferences": [],
@@ -18,7 +18,7 @@
     "MinPlayers": 1,
     "TickRate": 50,
     "GameNetworkType": "Singleplayer",
-    "MapSelect": "Unrestricted",
+    "MapSelect": "Tagged",
     "MapList": [],
     "RankType": "None",
     "PerMapRanking": false,
@@ -32,38 +32,52 @@
         {
           "Name": "Forward",
           "KeyboardCode": "W",
-          "GroupName": "Movement"
+          "GroupName": ""
         },
         {
-          "Name": "Backward",
+          "Name": "Back",
           "KeyboardCode": "S",
-          "GroupName": "Movement"
+          "GroupName": ""
         },
         {
           "Name": "Left",
           "KeyboardCode": "A",
-          "GroupName": "Movement"
+          "GroupName": ""
         },
         {
           "Name": "Right",
           "KeyboardCode": "D",
-          "GroupName": "Movement"
+          "GroupName": ""
         },
         {
-          "Name": "Duck",
-          "KeyboardCode": "ctrl",
-          "GamepadCode": "B",
-          "GroupName": "Movement"
+          "Name": "Jump",
+          "KeyboardCode": "SPACE",
+          "GroupName": ""
         },
         {
-          "Name": "Use",
+          "Name": "Interact",
           "KeyboardCode": "e",
-          "GroupName": "Other"
+          "GroupName": ""
+        },
+        {
+          "Name": "Interact (additional)",
+          "KeyboardCode": "MOUSE1",
+          "GroupName": ""
+        },
+        {
+          "Name": "Crouch",
+          "KeyboardCode": "CTRL",
+          "GroupName": ""
+        },
+        {
+          "Name": "Auto-Walk",
+          "KeyboardCode": "MOUSE2",
+          "GroupName": ""
         }
       ]
     },
     "Compiler": {
-      "RootNamespace": "Parable",
+      "RootNamespace": "THESTANLEYPARABLE",
       "DefineConstants": "SANDBOX;ADDON;DEBUG",
       "NoWarn": "1701;1702;1591;",
       "WarningsAsErrors": "",
