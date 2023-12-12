@@ -9,7 +9,7 @@ public sealed class CitizenAnimation : Component, Component.ExecuteInEditor
 
 	[Property] public GameObject LookAtObject { get; set; }
 
-	[Property, Range( 0.5f, 1.5f)] public float Height { get; set; } = 1.0f;
+	[Property, Range( 0.5f, 1.5f )] public float Height { get; set; } = 1.0f;
 
 
 	[Property] public GameObject IkLeftHand { get; set; }
@@ -62,7 +62,7 @@ public sealed class CitizenAnimation : Component, Component.ExecuteInEditor
 
 	public Transform GetEyeWorldTransform
 	{
-		get 
+		get
 		{
 			if ( EyeSource.IsValid() ) return EyeSource.Transform.World;
 

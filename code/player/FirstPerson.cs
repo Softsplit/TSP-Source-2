@@ -4,7 +4,6 @@ public class FirstPerson : Component
 {
 	[Property] public SkinnedModelRenderer Target { get; set; }
 
-
 	protected override void OnStart()
 	{
 		// Make target invisible.

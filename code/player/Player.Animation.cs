@@ -1,5 +1,5 @@
 using Sandbox;
-namespace Parable;
+namespace TSPS2;
 
 public partial class Player
 {
@@ -29,7 +29,7 @@ public partial class Player
 				Body.Transform.Rotation = Rotation.Lerp( Body.Transform.Rotation, targetAngle, Time.Delta * 2.0f );
 			}
 		}
-		
+
 		var AnimationHelper = GameObject.Components.Get<CitizenAnimation>();
 		if ( AnimationHelper is not null )
 		{
