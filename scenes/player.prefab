@@ -1,15 +1,14 @@
 {
   "RootObject": {
-    "Id": "2ace5377-1532-4d35-a959-6fcf8b224115",
-    "Name": "stanley",
+    "Id": "70ccf45f-6365-4b65-a06c-f540bf8614fb",
+    "Name": "player",
     "Enabled": true,
     "Components": [
       {
         "__type": "Player",
         "__enabled": true,
-        "Body": "557060ca-0703-4d35-948a-08bdc36f95ae",
-        "Controller": "2ace5377-1532-4d35-a959-6fcf8b224115",
-        "Eyes": "3fb368fe-fcd8-46d1-9f33-b40b66d88a4d",
+        "Body": "8885e3b3-3fe3-4c49-8a2a-49903e29e4da",
+        "Eyes": "9aeecf8c-d6d9-4ac2-a289-16250c404e2e",
         "Gravity": "0,0,800",
         "Speed": 175
       },
@@ -22,11 +21,28 @@
         "IgnoreLayers": "",
         "Radius": 16,
         "StepHeight": 18
+      },
+      {
+        "__type": "CitizenAnimation",
+        "__enabled": true,
+        "EyeSource": "9aeecf8c-d6d9-4ac2-a289-16250c404e2e",
+        "Height": 1,
+        "IkLeftFoot": null,
+        "IkLeftHand": null,
+        "IkRightFoot": null,
+        "IkRightHand": null,
+        "LookAtObject": null,
+        "Target": "8885e3b3-3fe3-4c49-8a2a-49903e29e4da"
+      },
+      {
+        "__type": "FirstPerson",
+        "__enabled": true,
+        "Target": "8885e3b3-3fe3-4c49-8a2a-49903e29e4da"
       }
     ],
     "Children": [
       {
-        "Id": "557060ca-0703-4d35-948a-08bdc36f95ae",
+        "Id": "8885e3b3-3fe3-4c49-8a2a-49903e29e4da",
         "Name": "body",
         "Enabled": true,
         "Components": [
@@ -36,6 +52,7 @@
             "BodyGroups": 18446744073709551615,
             "BoneMergeTarget": null,
             "CreateBoneObjects": false,
+            "MaterialGroup": null,
             "MaterialOverride": null,
             "Model": "models/citizen/citizen.vmdl",
             "ShouldCastShadows": true,
@@ -44,7 +61,7 @@
         ]
       },
       {
-        "Id": "3fb368fe-fcd8-46d1-9f33-b40b66d88a4d",
+        "Id": "9aeecf8c-d6d9-4ac2-a289-16250c404e2e",
         "Name": "eyes",
         "Position": "0,0,64",
         "Enabled": true,
