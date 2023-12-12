@@ -42,7 +42,7 @@
           "GroupName": "Movement"
         },
         {
-          "Name": "Back",
+          "Name": "Backward",
           "KeyboardCode": "S",
           "GroupName": "Movement"
         },
@@ -63,7 +63,7 @@
         },
         {
           "Name": "Interact",
-          "KeyboardCode": "e",
+          "KeyboardCode": "E",
           "GroupName": "Gameplay"
         },
         {
