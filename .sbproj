@@ -77,7 +77,7 @@
       ]
     },
     "Compiler": {
-      "RootNamespace": "THESTANLEYPARABLE",
+      "RootNamespace": "TSPS2",
       "DefineConstants": "SANDBOX;ADDON;DEBUG",
       "NoWarn": "1701;1702;1591;",
       "WarningsAsErrors": "",
