@@ -3,7 +3,7 @@
   "Type": "game",
   "Org": "softsplit",
   "Ident": "thestanleyparables2",
-  "Tags": "remake thestanleyparable walking-simulator",
+  "Tags": "remake thestanleyparable",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
@@ -256,7 +256,7 @@
           "GroupName": ""
         },
         {
-          "Name": "Backward",
+          "Name": "Back",
           "KeyboardCode": "S",
           "GroupName": ""
         },
@@ -276,17 +276,17 @@
           "GroupName": ""
         },
         {
-          "Name": "Use",
+          "Name": "Interact",
           "KeyboardCode": "e",
           "GroupName": ""
         },
         {
-          "Name": "Attack1",
+          "Name": "Interact (additional)",
           "KeyboardCode": "MOUSE1",
           "GroupName": ""
         },
         {
-          "Name": "Duck",
+          "Name": "Crouch",
           "KeyboardCode": "CTRL",
           "GroupName": ""
         },
@@ -297,7 +297,7 @@
         }
       ]
     },
-    "ReplaceTags": "thestanleyparable remake walking-simulator",
+    "ReplaceTags": "thestanleyparable remake",
     "HttpAllowList": null,
     "TickRate": 50,
     "LaunchConfigs": [
