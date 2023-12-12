@@ -26,53 +26,50 @@
     "CsProjName": "",
     "StartupScene": "scenes/game.scene",
     "ProjectTemplate": null,
-    "ControlModes": {},
+    "ControlModes": {
+      "Keyboard": true
+    },
     "InputSettings": {
       "Actions": [
         {
           "Name": "Forward",
           "KeyboardCode": "W",
-          "GroupName": ""
-        },
-        {
-          "Name": "Back",
-          "KeyboardCode": "S",
-          "GroupName": ""
+          "GroupName": "Movement"
         },
         {
           "Name": "Left",
           "KeyboardCode": "A",
-          "GroupName": ""
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Back",
+          "KeyboardCode": "S",
+          "GroupName": "Movement"
         },
         {
           "Name": "Right",
           "KeyboardCode": "D",
-          "GroupName": ""
-        },
-        {
-          "Name": "Jump",
-          "KeyboardCode": "SPACE",
-          "GroupName": ""
-        },
-        {
-          "Name": "Interact",
-          "KeyboardCode": "e",
-          "GroupName": ""
-        },
-        {
-          "Name": "Interact (additional)",
-          "KeyboardCode": "MOUSE1",
-          "GroupName": ""
-        },
-        {
-          "Name": "Crouch",
-          "KeyboardCode": "CTRL",
-          "GroupName": ""
+          "GroupName": "Movement"
         },
         {
           "Name": "Auto-Walk",
           "KeyboardCode": "MOUSE2",
-          "GroupName": ""
+          "GroupName": "Miscellaneous"
+        },
+        {
+          "Name": "Crouch",
+          "KeyboardCode": "CTRL",
+          "GroupName": "Miscellaneous"
+        },
+        {
+          "Name": "Interact",
+          "KeyboardCode": "e",
+          "GroupName": "Gameplay"
+        },
+        {
+          "Name": "Interact (additional)",
+          "KeyboardCode": "MOUSE1",
+          "GroupName": "Gameplay"
         }
       ]
     },
