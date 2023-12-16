@@ -3,7 +3,7 @@
 </p>
 <hr>
 
-[The Stanley Parable: Source 2](https://tspsource2.softsplit.org) is an ambitious project powered by S&box, developed by Facepunch Studios. The project's goal is to recreate the unique experience and mechanics of The Stanley Parable on Source 2, making full use of the engine's updated graphics and capabilities. This project is proudly presented by Softsplit Studios and is open source, inviting both players and developers to explore its inner workings.
+[The Stanley Parable: Source 2](https://tspsource2.softsplit.org) is an ambitious project currently being developed by Softsplit Studios for S&box. The project's goal is to recreate the unique experience and mechanics of The Stanley Parable on Source 2, making full use of the engine's updated graphics and capabilities.
 
 ## Installation
 
@@ -17,7 +17,7 @@ Congratulations! Your local version of TSPS2 is now ready for both playing and m
 
 ## Launching & Updating
 
-A convenient way to launch the game mode is by using [launch configs](https://github-production-user-asset-6210df.s3.amazonaws.com/86578963/278296336-5e067d30-0808-4112-8fa4-1972ec596145.png). Alternatively, you can launch the gamemode using the in-game gamemode browser or through the console. If you prefer using the console, execute the following commands:
+A convenient way to launch the game mode is by using [launch configurations](https://github-production-user-asset-6210df.s3.amazonaws.com/86578963/278296336-5e067d30-0808-4112-8fa4-1972ec596145.png). Alternatively, you can launch the gamemode using the in-game gamemode browser or through the console. If you prefer using the console, execute the following commands:
 ```
 gamemode local.thestanleyparables2
 map mapname
@@ -32,10 +32,10 @@ Interested in contributing by fixing a bug or implementing a new feature? Whethe
 - [The Pull Request Template](https://github.com/Softsplit/TSP-Source-2/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
 
 As long as you adhere to these guidelines, you can submit a pull request, and a member of the Softsplit development team will aim to review it promptly. 
-Join our [Discord](https://discord.gg/GaGFHFttAC) to chat with other developers and share your ideas in dedicated channels.
+Make sure to join our [Discord](https://discord.gg/GaGFHFttAC) to chat with other developers and share your ideas in dedicated channels!
 
 # License & Disclaimer
 
-This repository is covered by the [MIT license](https://github.com/Softsplit/TSP-Source-2/blob/main/LICENSE.md). It is crucial to acknowledge that certain assets integrated into this project, including models, sounds, animations, shaders, and more, were initially crafted by Valve Corporation, Galactic Cafe, and Crows Crows Crows, and thus are subject to the respective intellectual property rights of each company.
+This repository is covered by the [MIT license](https://github.com/Softsplit/TSP-Source-2/blob/main/LICENSE.md).
 
-For more information on third-party licenses, please refer to the [Third Party Licenses](https://github.com/Softsplit/TSP-Source-2/blob/main/THIRDPARTYLICENSES.md).
+For more information on third-party licenses, please refer to the [Third-Party Licenses](https://github.com/Softsplit/TSP-Source-2/blob/main/THIRDPARTYLICENSES.md).
