@@ -1,14 +1,14 @@
 {
   "GameObjects": [
     {
-      "Id": "70ccf45f-6365-4b65-a06c-f540bf8614fb",
+      "Id": "c0281447-ac68-41e7-9a4a-c6f840de0edd",
       "Name": "player",
       "Enabled": true,
       "__Prefab": "scenes/player.prefab"
     },
     {
       "Id": "8c1bd199-1b4d-4a96-9279-850d3747130c",
-      "Name": "floor",
+      "Name": "Floor",
       "Scale": "4,4,4",
       "Enabled": true,
       "Components": [
@@ -27,14 +27,14 @@
           "__enabled": true,
           "IsTrigger": false,
           "Scale": "100,100,0.01",
-          "Static": false,
+          "Static": true,
           "Surface": null
         }
       ]
     },
     {
       "Id": "b1faaa54-634d-4587-8ca5-03475760327a",
-      "Name": "lighting",
+      "Name": "Lighting",
       "Rotation": "0,0.6087617,0,0.7933531",
       "Enabled": true,
       "Components": [
@@ -49,7 +49,7 @@
     },
     {
       "Id": "fae3d758-6959-45f3-890c-97aa8285407e",
-      "Name": "doorframe_left",
+      "Name": "Frame",
       "Position": "200,68,1.020001",
       "Enabled": true,
       "Components": [
@@ -68,16 +68,16 @@
           "__enabled": true,
           "IsTrigger": false,
           "Model": "models/props_downtown/metal_door_112_16_frame.vmdl",
-          "Static": false,
+          "Static": true,
           "Surface": null
         }
       ],
       "Children": [
         {
           "Id": "8a466fca-99b0-491e-b795-3c2f501f5a87",
-          "Name": "metal_door_112",
+          "Name": "Left Door",
           "Position": "0.00002892523,56,0",
-          "Rotation": "0.5,-0.5000003,-0.5,0.4999996",
+          "Rotation": "-0.00000004470352,-0.00000000000002859942,1,-0.0000006397578",
           "Enabled": true,
           "Components": [
             {
@@ -86,7 +86,7 @@
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": "default",
               "MaterialOverride": null,
-              "Model": "models/props_downtown/metal_door_112.vmdl",
+              "Model": "models/props_downtown/metal_door_112_static.vmdl",
               "ShouldCastShadows": true,
               "Tint": "1,1,1,1"
             },
@@ -97,6 +97,22 @@
               "Model": "models/props_downtown/metal_door_112.vmdl",
               "Static": false,
               "Surface": null
+            },
+            {
+              "__type": "Door",
+              "__enabled": true,
+              "Easing": [
+                {},
+                {
+                  "x": 1,
+                  "y": 1
+                }
+              ],
+              "Locked": false,
+              "Opened": false,
+              "RotationA": "0,180,0",
+              "RotationB": "0,90,0",
+              "SecondsToOpen": 1
             }
           ]
         }
@@ -104,7 +120,7 @@
     },
     {
       "Id": "442c3e00-81e0-400a-8c0f-a1412db6c434",
-      "Name": "doorright_frame",
+      "Name": "Frame",
       "Position": "200,-124,0",
       "Enabled": true,
       "Components": [
@@ -123,16 +139,15 @@
           "__enabled": true,
           "IsTrigger": false,
           "Model": "models/props_downtown/metal_door_112_16_frame.vmdl",
-          "Static": false,
+          "Static": true,
           "Surface": null
         }
       ],
       "Children": [
         {
           "Id": "8858cb25-2dcc-4602-98b4-2cc5fa3cd2cc",
-          "Name": "metal_door_112",
+          "Name": "Right Door",
           "Position": "0,0,0",
-          "Rotation": "0.5,0.5000003,0.5,0.4999996",
           "Enabled": true,
           "Components": [
             {
@@ -141,7 +156,7 @@
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": "default",
               "MaterialOverride": null,
-              "Model": "models/props_downtown/metal_door_112.vmdl",
+              "Model": "models/props_downtown/metal_door_112_static.vmdl",
               "ShouldCastShadows": true,
               "Tint": "1,1,1,1"
             },
@@ -149,23 +164,332 @@
               "__type": "ModelCollider",
               "__enabled": true,
               "IsTrigger": false,
-              "Model": "models/props_downtown/metal_door_112.vmdl",
+              "Model": "models/props_downtown/metal_door_112_static.vmdl",
               "Static": false,
               "Surface": null
+            },
+            {
+              "__type": "Door",
+              "__enabled": true,
+              "Easing": [
+                {},
+                {
+                  "x": 1,
+                  "y": 1
+                }
+              ],
+              "Locked": false,
+              "Opened": false,
+              "RotationA": "0,0,0",
+              "RotationB": "0,90,0",
+              "SecondsToOpen": 1
             }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "18db0fe0-0534-4ba0-883e-918acdbea738",
+      "Name": "Trigger Area",
+      "Position": "128,0,32",
+      "Rotation": "0,0,0.707107,0.7071065",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": true,
+          "Scale": "64,64,64",
+          "Static": true,
+          "Surface": null
+        },
+        {
+          "__type": "DecalRenderer",
+          "__enabled": true,
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "materials/decals/default.vmat",
+          "Mod2XBlending": false,
+          "Size": "64,64,64",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        },
+        {
+          "__type": "Trigger",
+          "__enabled": true,
+          "EndTouch": [
+            {
+              "Kind": "Action",
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "Sandbox.Game/Sandbox.IComponentLister",
+                    "_name": "Get",
+                    "_isStatic": false,
+                    "T": {
+                      "$type": "Type",
+                      "Type": "package.softsplit.thestanleyparables2/Door"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "272,32"
+                  }
+                },
+                {
+                  "Id": 3,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "package.softsplit.thestanleyparables2/Door",
+                    "_name": "Close",
+                    "_isStatic": false
+                  },
+                  "UserData": {
+                    "Position": "496,-0"
+                  }
+                }
+              ],
+              "Links": [
+                [
+                  0,
+                  "_signal",
+                  3,
+                  "_signal"
+                ],
+                [
+                  0,
+                  "other",
+                  1,
+                  "_target"
+                ],
+                [
+                  1,
+                  "_result",
+                  3,
+                  "_target"
+                ]
+              ],
+              "UserData": {
+                "Title": null,
+                "id": "2320b8da-7829-4660-a37d-efabedfa7ebc"
+              }
+            },
+            {
+              "Kind": "Action",
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "Sandbox.Game/Sandbox.IComponentLister",
+                    "_name": "Get",
+                    "_isStatic": false,
+                    "T": {
+                      "$type": "Type",
+                      "Type": "package.softsplit.thestanleyparables2/Door"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "336,128"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "package.softsplit.thestanleyparables2/Door",
+                    "_name": "Close",
+                    "_isStatic": false
+                  },
+                  "UserData": {
+                    "Position": "592,16"
+                  }
+                }
+              ],
+              "Links": [
+                [
+                  0,
+                  "_signal",
+                  2,
+                  "_signal"
+                ],
+                [
+                  0,
+                  "other",
+                  1,
+                  "_target"
+                ],
+                [
+                  1,
+                  "_result",
+                  2,
+                  "_target"
+                ]
+              ],
+              "UserData": {
+                "Title": null,
+                "id": "0b7a2a80-a291-4e80-97d9-bfd8bb733c81"
+              }
+            }
+          ],
+          "EndTouchTarget": [
+            "8a466fca-99b0-491e-b795-3c2f501f5a87",
+            "8858cb25-2dcc-4602-98b4-2cc5fa3cd2cc"
+          ],
+          "StartTouch": [
+            {
+              "Kind": "Action",
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "Sandbox.Game/Sandbox.IComponentLister",
+                    "_name": "Get",
+                    "_isStatic": false,
+                    "T": {
+                      "$type": "Type",
+                      "Type": "package.softsplit.thestanleyparables2/Door"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "272,64"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "package.softsplit.thestanleyparables2/Door",
+                    "_name": "Open",
+                    "_isStatic": false
+                  },
+                  "UserData": {
+                    "Position": "528,0"
+                  }
+                }
+              ],
+              "Links": [
+                [
+                  0,
+                  "_signal",
+                  2,
+                  "_signal"
+                ],
+                [
+                  0,
+                  "other",
+                  1,
+                  "_target"
+                ],
+                [
+                  1,
+                  "_result",
+                  2,
+                  "_target"
+                ]
+              ],
+              "UserData": {
+                "Title": null,
+                "id": "6c2e321a-4bf4-47da-ae79-574021ab183f"
+              }
+            },
+            {
+              "Kind": "Action",
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "Sandbox.Game/Sandbox.IComponentLister",
+                    "_name": "Get",
+                    "_isStatic": false,
+                    "T": {
+                      "$type": "Type",
+                      "Type": "package.softsplit.thestanleyparables2/Door"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "320,112"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "package.softsplit.thestanleyparables2/Door",
+                    "_name": "Open",
+                    "_isStatic": false
+                  },
+                  "UserData": {
+                    "Position": "560,32"
+                  }
+                }
+              ],
+              "Links": [
+                [
+                  0,
+                  "_signal",
+                  2,
+                  "_signal"
+                ],
+                [
+                  0,
+                  "other",
+                  1,
+                  "_target"
+                ],
+                [
+                  1,
+                  "_result",
+                  2,
+                  "_target"
+                ]
+              ],
+              "UserData": {
+                "Title": null,
+                "id": "93e70859-fe92-46eb-bd2a-102fd09103d3"
+              }
+            }
+          ],
+          "StartTouchTarget": [
+            "8a466fca-99b0-491e-b795-3c2f501f5a87",
+            "8858cb25-2dcc-4602-98b4-2cc5fa3cd2cc"
           ]
         }
       ]
     }
   ],
   "SceneProperties": {
+    "FixedUpdateFrequency": 50,
     "Lerping": true,
-    "UseFixedUpdate": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
     "ThreadedAnimation": true,
     "TimeScale": 1,
-    "MaxFixedUpdates": 5,
-    "FixedUpdateFrequency": 50,
-    "NetworkFrequency": 60
+    "UseFixedUpdate": true
   },
   "Title": "game",
   "Description": "",
