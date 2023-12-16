@@ -18,7 +18,7 @@
         "Acceleration": 10,
         "GroundAngle": 45,
         "Height": 72,
-        "IgnoreLayers": "",
+        "IgnoreLayers": "trigger,player",
         "Radius": 16,
         "StepHeight": 18
       },
@@ -72,13 +72,33 @@
             "BackgroundColor": "0.33333,0.46275,0.52157,1",
             "ClearFlags": "All",
             "FieldOfView": 75,
+            "IsMainCamera": true,
             "Orthographic": false,
             "OrthographicHeight": 1204,
+            "Priority": 1,
             "RenderExcludeTags": "",
             "RenderTags": "",
             "TargetEye": "None",
+            "Viewport": "0,0,1,1",
             "ZFar": 10000,
             "ZNear": 10
+          }
+        ]
+      },
+      {
+        "Id": "e0de3f81-335a-4bc6-9331-b88ec82c0134",
+        "Name": "collider",
+        "Position": "0,0,36",
+        "Tags": "player",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ColliderBoxComponent",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Scale": "32,32,72",
+            "Static": false,
+            "Surface": null
           }
         ]
       }
