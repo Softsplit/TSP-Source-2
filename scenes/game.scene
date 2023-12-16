@@ -472,12 +472,111 @@
                 "Title": null,
                 "id": "93e70859-fe92-46eb-bd2a-102fd09103d3"
               }
+            },
+            {
+              "Kind": "Action",
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "Sandbox.Game/Sandbox.IComponentLister",
+                    "_name": "Get",
+                    "_isStatic": false,
+                    "T": {
+                      "$type": "Type",
+                      "Type": "Sandbox.Game/Sandbox.SoundPointComponent"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "352,96"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "call",
+                  "Properties": {
+                    "_type": "Sandbox.Game/Sandbox.SoundPointComponent",
+                    "_name": "StartSound",
+                    "_isStatic": false
+                  },
+                  "UserData": {
+                    "Position": "592,0"
+                  }
+                }
+              ],
+              "Links": [
+                [
+                  0,
+                  "_signal",
+                  2,
+                  "_signal"
+                ],
+                [
+                  0,
+                  "other",
+                  1,
+                  "_target"
+                ],
+                [
+                  1,
+                  "_result",
+                  2,
+                  "_target"
+                ]
+              ],
+              "UserData": {
+                "Title": null,
+                "id": "b182c4c1-2c2b-4a45-a14e-70dced327b8d"
+              }
             }
           ],
           "StartTouchTarget": [
             "8a466fca-99b0-491e-b795-3c2f501f5a87",
-            "8858cb25-2dcc-4602-98b4-2cc5fa3cd2cc"
+            "8858cb25-2dcc-4602-98b4-2cc5fa3cd2cc",
+            "18db0fe0-0534-4ba0-883e-918acdbea738"
           ]
+        },
+        {
+          "__type": "SoundPointComponent",
+          "__enabled": true,
+          "Force2d": true,
+          "MaxRepeatTime": 1,
+          "MinRepeatTime": 1,
+          "Pitch": 1,
+          "PlayOnStart": false,
+          "Repeat": false,
+          "SoundEvent": "sounds/narrator/stanley.sound",
+          "SoundOverride": true,
+          "StopOnNew": false,
+          "Volume": 1
+        }
+      ]
+    },
+    {
+      "Id": "38057b11-8a7e-4c87-806f-4fc2ac691aa9",
+      "Name": "Narrator",
+      "Position": "-128,0,32",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "SoundPointComponent",
+          "__enabled": true,
+          "Force2d": true,
+          "MaxRepeatTime": 1,
+          "MinRepeatTime": 1,
+          "Pitch": 1,
+          "PlayOnStart": true,
+          "Repeat": false,
+          "SoundEvent": "sounds/narrator/two_doors.sound",
+          "SoundOverride": true,
+          "StopOnNew": false,
+          "Volume": 1
         }
       ]
     }
