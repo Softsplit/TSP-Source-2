@@ -1,6 +1,6 @@
 using Sandbox;
 
-public sealed class ImportedObject : HammerEntity
+public class ImportedObject : HammerEntity
 {
     [Property] public string classname { get; set; } = "";
 
