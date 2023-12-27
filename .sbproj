@@ -11,70 +11,76 @@
   "MenuResources": "/UI/*\n/sounds/ui/*\n/fonts/*\ndata/sound/game_sounds_ui/*\nsounds/gameui/*",
   "HasCode": true,
   "CodePath": "/code/",
-  "PackageReferences": [],
+  "PackageReferences": [
+    "gooman.coroutines"
+  ],
   "EditorReferences": null,
   "Metadata": {
     "MaxPlayers": 1,
     "MinPlayers": 1,
-    "TickRate": 50,
     "GameNetworkType": "Singleplayer",
-    "MapSelect": "Tagged",
-    "MapList": [],
     "RankType": "None",
     "PerMapRanking": false,
     "LeaderboardType": "None",
     "CsProjName": "",
-    "StartupScene": "scenes/game.scene",
+    "StartupScene": "scenes/menu.scene",
     "ProjectTemplate": null,
     "ControlModes": {
-      "Keyboard": true
+      "Keyboard": true,
+      "Gamepad": true
     },
     "InputSettings": {
       "Actions": [
         {
           "Name": "Forward",
           "KeyboardCode": "W",
-          "GroupName": "Movement"
+          "GamepadCode": "",
+          "GroupName": ""
         },
         {
           "Name": "Left",
           "KeyboardCode": "A",
-          "GroupName": "Movement"
+          "GamepadCode": "",
+          "GroupName": ""
         },
         {
-          "Name": "Backward",
+          "Name": "Back",
           "KeyboardCode": "S",
-          "GroupName": "Movement"
+          "GamepadCode": "",
+          "GroupName": ""
         },
         {
           "Name": "Right",
           "KeyboardCode": "D",
-          "GroupName": "Movement"
+          "GamepadCode": "",
+          "GroupName": ""
         },
         {
           "Name": "Auto-Walk",
           "KeyboardCode": "MOUSE2",
-          "GroupName": "Miscellaneous"
+          "GroupName": ""
         },
         {
           "Name": "Crouch",
           "KeyboardCode": "CTRL",
-          "GroupName": "Miscellaneous"
+          "GamepadCode": "LeftTrigger",
+          "GroupName": ""
         },
         {
           "Name": "Interact",
           "KeyboardCode": "E",
-          "GroupName": "Gameplay"
+          "GamepadCode": "A",
+          "GroupName": ""
         },
         {
           "Name": "Interact (additional)",
           "KeyboardCode": "MOUSE1",
-          "GroupName": "Gameplay"
+          "GroupName": ""
         }
       ]
     },
     "Compiler": {
-      "RootNamespace": "TSPS2",
+      "RootNamespace": "THESTANLEYPARABLES2",
       "DefineConstants": "SANDBOX;ADDON;DEBUG",
       "NoWarn": "1701;1702;1591;",
       "WarningsAsErrors": "",

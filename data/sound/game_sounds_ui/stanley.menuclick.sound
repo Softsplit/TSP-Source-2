@@ -1,0 +1,15 @@
+{
+  "UI": true,
+  "Volume": "1.00,1.00,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 75,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/gameui/ui_menu_click_01.vsnd",
+    "sounds/gameui/ui_menu_click_02.vsnd",
+    "sounds/gameui/ui_menu_click_03.vsnd",
+    "sounds/gameui/ui_menu_click_04.vsnd",
+    "sounds/ambience/forest-day-loop.vsnd"
+  ],
+  "__references": []
+}

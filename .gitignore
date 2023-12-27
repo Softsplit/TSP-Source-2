@@ -4,6 +4,10 @@
 *.cache
 *.json
 
+# Localization submodule
+
+!**/.localization/*/TSPS2.json
+
 /*.bin
 
 code/accesslist.txt
@@ -11,8 +15,6 @@ code/Properties
 code/obj
 *.csproj
 *.csproj.user
-*.sln
-.idea/*
 .vs
 .intermediate
 
@@ -43,8 +45,8 @@ elements/sessions/*
 dev/*
 *.fgd
 
+scenes/*
 expressions/*
 
 *.generated.vtex_c
 *.vtex_c
-*.user

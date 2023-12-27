@@ -1,0 +1,28 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = false
+		Volume = 0.4
+		VolumeRandom = 0
+		Pitch = 0.95
+		PitchRandom = 0.050000012
+		Decibels = 70
+		Sounds = 
+[
+resource:"sounds/physics/turret/physics_turret_impact_sm_01.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_02.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_03.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_04.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_05.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_06.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_07.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_08.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_09.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_10.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_11.vsnd",
+resource:"sounds/physics/turret/physics_turret_impact_sm_12.vsnd",
+]
+		SelectionMode = 3
+	}
+}

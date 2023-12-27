@@ -1,0 +1,31 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		UI = false
+		Volume = 0.95
+		VolumeRandom = 0.050000012
+		Pitch = 0.95
+		PitchRandom = 0.099999964
+		Decibels = 75
+		Sounds = 
+[
+resource:"sounds/player/footsteps/fs_fm_paint_01.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_03.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_05.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_07.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_09.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_11.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_13.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_15.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_17.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_19.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_21.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_23.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_25.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_27.vsnd",
+resource:"sounds/player/footsteps/fs_fm_paint_29.vsnd",
+]
+		SelectionMode = 3
+	}
+}

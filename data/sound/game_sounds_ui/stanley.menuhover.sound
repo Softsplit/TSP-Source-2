@@ -1,0 +1,21 @@
+{
+  "UI": false,
+  "Volume": "1.00,1.00,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 75,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/gameui/ui_menu_hover_01.vsnd",
+    "sounds/gameui/ui_menu_hover_02.vsnd",
+    "sounds/gameui/ui_menu_hover_03.vsnd",
+    "sounds/gameui/ui_menu_hover_04.vsnd",
+    "sounds/gameui/ui_menu_hover_05.vsnd",
+    "sounds/gameui/ui_menu_hover_06.vsnd",
+    "sounds/gameui/ui_menu_hover_07.vsnd",
+    "sounds/gameui/ui_menu_hover_08.vsnd",
+    "sounds/gameui/ui_menu_hover_09.vsnd"
+  ],
+  "MaximumDistance": 1308.4543,
+  "MinimumDistance": 65.42272,
+  "__references": []
+}

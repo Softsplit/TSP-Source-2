@@ -1,23 +1,23 @@
 using System;
-using Sandbox;
 using Nest.Components;
+using Sandbox;
 
 [Serializable]
 public struct HammerConnection
 {
-	public string recipient;
+    public string recipient;
 
-	public Outputs output;
+    public Outputs output;
 
-	public Inputs input;
+    public Inputs input;
 
-	public NestInput nestInput;
+    public NestInput nestInput;
 
-	public GameObject recipientObject;
+    public GameObject recipientObject;
 
-	public string parameter;
+    public string parameter;
 
-	public float delay;
+    public float delay;
 
-	public bool onceOnly;
+    public bool onceOnly;
 }

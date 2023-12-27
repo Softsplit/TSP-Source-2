@@ -1,0 +1,146 @@
+{
+  "RootObject": {
+    "Id": "2106ebd6-59c4-44a8-a149-15b16ef04a56",
+    "Name": "stanley",
+    "Rotation": "0.0000006321923,0.000000647235,-0.9999309,0.01175657",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "CharacterController",
+        "__enabled": true,
+        "Acceleration": 10,
+        "GroundAngle": 45,
+        "Height": 64,
+        "IgnoreLayers": "",
+        "Radius": 14,
+        "StepHeight": 18
+      },
+      {
+        "__type": "SoundPointComponent",
+        "__enabled": true,
+        "Force2d": false,
+        "MaxRepeatTime": 1,
+        "MinRepeatTime": 1,
+        "Pitch": 1,
+        "PlayOnStart": false,
+        "Repeat": false,
+        "SoundEvent": null,
+        "SoundOverride": false,
+        "StopOnNew": false,
+        "Volume": 1
+      }
+    ],
+    "Children": [
+      {
+        "Id": "d59193da-1a4c-4ff6-87cd-504ddcc80027",
+        "Name": "CameraParent",
+        "Position": "0,0,64",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "7b470648-493a-4447-b670-571b4488cff4",
+            "Name": "Main Camera",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "CameraComponent",
+                "__enabled": true,
+                "BackgroundColor": "1,1,1,1",
+                "ClearFlags": "All",
+                "FieldOfView": 80,
+                "IsMainCamera": true,
+                "Orthographic": false,
+                "OrthographicHeight": 1204,
+                "Priority": 1,
+                "RenderExcludeTags": "",
+                "RenderTags": "",
+                "TargetEye": "None",
+                "Viewport": "0,0,1,1",
+                "ZFar": 1000,
+                "ZNear": 0.1
+              },
+              {
+                "__type": "AudioListener",
+                "__enabled": true
+              },
+              {
+                "__type": "DepthOfField",
+                "__enabled": true,
+                "BackBlur": true,
+                "BlurSize": 100,
+                "FocalDistance": 200,
+                "FrontBlur": false
+              }
+            ],
+            "Children": [
+              {
+                "Id": "f2b5b159-e6d4-4774-9c5a-db3dcf60929b",
+                "Name": "ViewRaycastTarget",
+                "Position": "0,0,-3.74",
+                "Enabled": true
+              }
+            ]
+          },
+          {
+            "Id": "53a0b7ac-22c9-412c-8d0c-94f9c85bb2ab",
+            "Name": "RaycastTarget",
+            "Position": "0,0,0",
+            "Enabled": true
+          }
+        ]
+      },
+      {
+        "Id": "e6ef2546-f9d7-4e19-9894-997d0ade2945",
+        "Name": "StanleyCenter",
+        "Enabled": true
+      },
+      {
+        "Id": "e47d926b-d096-425f-bfaf-5fc38ea1e599",
+        "Name": "UseAudioSource",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SoundPointComponent",
+            "__enabled": true,
+            "Force2d": false,
+            "MaxRepeatTime": 1,
+            "MinRepeatTime": 1,
+            "Pitch": 1,
+            "PlayOnStart": false,
+            "Repeat": false,
+            "SoundEvent": null,
+            "SoundOverride": false,
+            "StopOnNew": false,
+            "Volume": 1
+          }
+        ]
+      },
+      {
+        "Id": "57a31bd0-3e8d-4213-b544-758daa7c5940",
+        "Name": "FootstepAudio",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SoundPointComponent",
+            "__enabled": true,
+            "Force2d": false,
+            "MaxRepeatTime": 1,
+            "MinRepeatTime": 1,
+            "Pitch": 1,
+            "PlayOnStart": false,
+            "Repeat": false,
+            "SoundEvent": null,
+            "SoundOverride": false,
+            "StopOnNew": false,
+            "Volume": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
